@@ -1,0 +1,105 @@
+diff --git a/src/meusbd.c b/src/meusbd.c
+--- a/src/meusbd.c
++++ b/src/meusbd.c
+@@ -1192,11 +1192,37 @@
+     return 0;
+ }
+ 
+ 
+-
+-//----- (00002788) --------------------------------------------------------
+-__myevic__ void hidGetOutReport( uint8_t *pu8Buffer, uint32_t u32BufferLen )
++
++
++/*
++ * Keep the 2 KiB profile-page scratch frame out of hidGetOutReport().
++ * That USB handler can call SaveProfile(), which has its OWN 2 KiB frame.
++ * An inline helper would reproduce the 4 KiB+ nested stack overrun.
++ * This is deliberately a per-call STACK buffer (not an ISR-shared static).
++ */
++__myevic__ __attribute__((noinline)) static void hidWriteStoredProfile( dfParams_t *p )
++{
++	uint8_t page[FMC_FLASH_PAGE_SIZE] __attribute__((aligned(4)));
++	uint32_t offset = p->Profile * DATAFLASH_PARAMS_SIZE;
++
++	MemCpy( page, (void*)DATAFLASH_PROFILES_BASE, FMC_FLASH_PAGE_SIZE );
++	MemCpy( page + offset, p, DATAFLASH_PARAMS_SIZE );
++
++	SYS_UnlockReg();
++	FMC_ENABLE_ISP();
++	FMC_ENABLE_AP_UPDATE();
++
++	FMCEraseWritePage( DATAFLASH_PROFILES_BASE, (uint32_t*)page );
++
++	FMC_DISABLE_AP_UPDATE();
++	FMC_DISABLE_ISP();
++	SYS_LockReg();
++}
++
++//----- (00002788) --------------------------------------------------------
++__myevic__ void hidGetOutReport( uint8_t *pu8Buffer, uint32_t u32BufferLen )
+ 
+ {
+ 	uint8_t u8Cmd;
+ 	uint8_t *hidDataPtr;
+@@ -1256,24 +1282,9 @@
+ 					p->Profile = u32StartAddr - 1;
+ 					p->PCRC = CalcPageCRC( (uint32_t*)p );
+ 
+ 
+-					uint8_t page[FMC_FLASH_PAGE_SIZE] __attribute__((aligned(4)));
+-
+-					uint32_t offset = p->Profile * DATAFLASH_PARAMS_SIZE;
+-
+-					MemCpy( page, (void*)DATAFLASH_PROFILES_BASE, FMC_FLASH_PAGE_SIZE );
+-					MemCpy( page + offset, p, DATAFLASH_PARAMS_SIZE );
+-
+-					SYS_UnlockReg();
+-					FMC_ENABLE_ISP();
+-					FMC_ENABLE_AP_UPDATE();
+-
+-					FMCEraseWritePage( DATAFLASH_PROFILES_BASE, (uint32_t*)page );
+-
+-					FMC_DISABLE_AP_UPDATE();
+-					FMC_DISABLE_ISP();
+-					SYS_LockReg();
++					hidWriteStoredProfile( p );
+ 
+ 				}
+ 
+ 				myprintf( "Set Profile command complete.\n" );
+diff --git a/src/myevic.s b/src/myevic.s
+--- a/src/myevic.s
++++ b/src/myevic.s
+@@ -441,14 +441,11 @@
+ 		.global	GetFirmwareSize
+ 		.thumb_func
+ 
+ 
+-GetFirmwareSize:
+-		ldr		r2, =RAMInitTable
+-		ldr		r0, [r2]
+-		ldr		r1, [r2, #8]
+-		add		r0, r1
+-		bx		lr
++GetFirmwareSize:
++		ldr		r0, =RAMInitEnd
++		bx		lr
+ 
+ 		
+ 		.balign	4,0
+ 		.pool
+diff --git a/linker.ld b/linker.ld
+--- a/linker.ld
++++ b/linker.ld
+@@ -73,9 +73,9 @@
+ 
+ 	Data_Size = Data_End_RAM - Data_Start_RAM;
+ 
+ 
+-	.sram : {
++	.sram (NOLOAD) : {
+ 
+ 		SRAMZ_Start = .;
+ 
+ 		. = ALIGN(4);
