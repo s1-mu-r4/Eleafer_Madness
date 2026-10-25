@@ -7,7 +7,7 @@
 - 対象機：Joyetech eVic VTwo Mini、E115、HW 1.00、純正FW 5.04。
 - Ron7 `pufflimit`：[`wighawag/myevic@08202453b54c2284df27c9f188f66c2b2fb0f92e`](https://github.com/wighawag/myevic/tree/08202453b54c2284df27c9f188f66c2b2fb0f92e)。
 - 上流：[`ClockSelect/myevic@546394bcf1ac9ab63381fa2fb484a0dfa11d443f`](https://github.com/ClockSelect/myevic/tree/546394bcf1ac9ab63381fa2fb484a0dfa11d443f)。
-- 元のRon7ブランチは**変更していない**。過去の分析はDOPEY側の[PR #24](https://github.com/s1-mu-r4/dopey/pull/24)・[PR #25](https://github.com/s1-mu-r4/dopey/pull/25)で行われた。本書はそこからRon7実機検証に関係する事実のみを独立記録したもので、DOPEYの要求やB1ゲートは採用しない。
+- 上流のRon7ブランチは**変更していない**。本書はRon7のE115実機検証に必要なオフライン結果と、未解決の安全項目を記録する。
 
 ## 実機の読み取り専用証拠（ユーザー報告／USER_LOG_PASS）
 
@@ -29,11 +29,11 @@
 - 純正のWindows/Macアップデータが通常要求するのは開始アドレス0、BIN実サイズと静的解析で確認されたが、**個体LDROMの内部消去範囲・中断復旧は未取得**。
 - 通常起動のGETINFOダンプは物理APROM/LDROM/CONFIGの全バックアップではない。純正ファイルを所持することは完全な復旧保証ではない。
 
-原資料：[公式更新パッケージの旧監査](https://github.com/s1-mu-r4/dopey/blob/370517a29db0589b11b7bfbbae9faca50b90ac1b/docs/reports/b1/B1_E115_STOCK_UPDATE_AUDIT.md)。機能仕様へは転用しない。
+静的アーカイブ検査の機械可読データ：[E115公式更新候補の検証記録](../evidence/e115_stock_artifacts_20261025.json)。
 
 ## Ron7固定SHA 再現ビルド（オフライン／OFFLINE_INSPECTED）
 
-過去Codex作業コミット：[`370517a`](https://github.com/s1-mu-r4/dopey/commit/370517a29db0589b11b7bfbbae9faca50b90ac1b)。固定Dockerイメージ・BSP・日時でクリーンビルド2回。ELF／平文BIN／変換BINがそれぞれバイト一致。**実機では動かしていない。**
+初期の隔離ビルド検証では、固定Dockerイメージ・BSP・日時でクリーンビルド2回。ELF／平文BIN／変換BINがそれぞれバイト一致。**実機では動かしていない。**
 
 | 成果物・条件 | 結果 |
 |---|---|

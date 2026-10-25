@@ -13,7 +13,7 @@ Unchanged: Ron7 `pufflimit` policy, dataflash layout, existing thermal/battery/s
 
 Known unaddressed risk: `HID_CMD_FMCREAD` bad precedence and missing address scope. A separate patch must either validate safe command bounds or make this mode unreachable; never use it on the real device before review.
 
-Run on isolated *pinned clean checkout*: `git apply --check <patch>`, then `git apply <patch>`, fixed SHA build, readelf, objdump, source tests. **Patch does not touch DOPEY.**
+Run on isolated *pinned clean checkout*: `git apply --check <patch>`, then `git apply <patch>`, fixed SHA build, readelf, objdump, source tests. The patch is limited to the fixed Ron7 checkout.
 
 
 ## パッチ0002：FMCREADの受信長・アドレス算術チェック

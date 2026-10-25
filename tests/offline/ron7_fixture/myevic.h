@@ -1,6 +1,6 @@
 /* Native audit stubs only: no MMIO, USB, flash, PWM or real clock. */
-#ifndef B1_MYEVIC_STUB
-#define B1_MYEVIC_STUB
+#ifndef RON7_MYEVIC_STUB
+#define RON7_MYEVIC_STUB
 #include <stdint.h>
 #include <time.h>
 #define __myevic__

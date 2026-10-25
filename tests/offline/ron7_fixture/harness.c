@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
     dfPLMaxPuffs = 2;
     int scenario = atoi(argv[1]);
     switch (scenario) {
-    case 1: /* DOPEY counterexample: FAIL_CLOSED + untrusted + spare budget allows. */
+    case 1: /* Ron7 original-behavior counterexample: FAIL_CLOSED + untrusted + spare budget allows. */
         seal = 0;
         assert(PLCheckFire() == 1);
         break;

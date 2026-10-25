@@ -1,14 +1,6 @@
 {
-  "schema": "DOPEY_B1_E115_STOCK_OFFLINE_V1",
+  "schema": "E115_STOCK_UPDATE_STATIC_V1",
   "date_utc": "2026-10-25",
-  "base_pr": 25,
-  "base_branch": "research/b1-vape-feasibility-20261025",
-  "base_commit": "085370681e13e3516e26bf33992f85585af41e3d",
-  "decision": {
-    "B1": "CONDITIONAL",
-    "Flash": "BLOCKED_HARDWARE",
-    "candidate": "0x19800–0x1D7FF"
-  },
   "scope": "公式配布物の取得と静的解析。対象プログラム・実機は未実行。配布物はGitへ格納しない。",
   "official_page": {
     "url": "https://www.joyetech.com/mvr-software/?sid=189",
@@ -2192,8 +2184,6 @@
       "WINMM.dll"
     ],
     "resource_type_counts": {
-      "PNG": 553,
-      "STYLE_XML": 5,
       "1": 28,
       "2": 50,
       "3": 13,
@@ -2204,7 +2194,9 @@
       "14": 5,
       "16": 1,
       "24": 1,
-      "241": 2
+      "241": 2,
+      "PNG": 553,
+      "STYLE_XML": 5
     }
   },
   "mac_signature": {
@@ -2326,10 +2318,9 @@
     }
   },
   "remaining_evidence": [
-    "ユーザーGETINFO原本の今回再検証（未受領）、実チップ刻印・PCB・silicon revision・CONFIG",
-    "当該E115のLDROM 0x100000–0x100FFFの実体とhash",
-    "LDROMの消去ループ/上限/丸め/中断時挙動",
-    "候補8ページの更新/復旧保持実証"
+    "Owner-device GETINFO observations not independently remeasured from a new original dump",
+    "Device-specific LDROM firmware bytes and erase/recovery behavior have not been captured",
+    "Device-specific CONFIG settings and restoration conditions remain unverified"
   ],
   "third_party_binaries_used": false,
   "hardware_actions": "NOT_RUN",
@@ -2339,17 +2330,13 @@
     "BIN変換往復・E115・候補手前終端": 3,
     "Windows命令VA/file照合・証明書テーブル": 10,
     "APROM dispatcher/erase補助命令": 2,
-    "Mac CMS暗号整合（信頼検証なし）": "PASS",
-    "提出資料4件・diff check・候補8ページ": "PASS"
+    "Mac CMS暗号整合（信頼検証なし）": "PASS"
   },
   "independent_review": {
     "result": "重要指摘CorePlotの版間同一性を修正、残る重大・重要指摘なし",
     "scope": "原本の静的照合のみ。実機・対象実行なし。"
   },
-  "integration_parent": "d1a219b595f5410b860845c0c99e41dc390b3612",
   "subsequent_user_log_evidence": {
-    "commit": "d1a219b595f5410b860845c0c99e41dc390b3612",
-    "source_path": "docs/reports/b1/B1_E115_REAL_DEVICE_EVIDENCE_20261025.md",
     "evidence": "USER_LOG_PASS / SOURCE_CORROBORATED（今回原本GETINFOは未受領・再測定していない）",
     "reported_product": "E115",
     "reported_product_hw": 100,

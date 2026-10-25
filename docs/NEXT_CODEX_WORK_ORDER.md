@@ -1,6 +1,6 @@
 # Ron7 E115｜Codex向け最小修正・実機確認準備
 
-**目的はRon7公開`pufflimit`の既存機能をE115/HW1.00で検証することだけ。** DOPEYの週間／60分制限、USBログ・ACK、追加Flash、料金・スタミナ設計は一切実装・採点しない。
+**目的はRon7公開`pufflimit`の既存機能をE115/HW1.00で検証することだけ。** 既存機能以外の仕様・データ領域を追加実装・採点しない。
 
 ## 入力
 
@@ -20,9 +20,9 @@
 
 この**Eleafer Madness**のDraft PR #1に、最小修正の検討・パッチ候補（必要なら独立の研究用ブランチ）・テスト・明確な書込Go/No-Go判定を集約。ユーザー承認前に本番用FWを配布したり、実機へ書き込んだり、mainへマージしたりしない。
 
-**DOPEYリポジトリの変更は禁止。** この作業の合格条件にDOPEYの設計文書・機能追加を持ち込まない。純正復旧経路が確証できない場合は、No-Goのまま阻害理由を1件に集約して報告する。
+**対象はRon7版の最小修正だけ。** 他のリポジトリや未採択の新機能へ作業を広げない。純正復旧経路が確証できない場合は、No-Goのまま阻害理由を1件に集約して報告する。
 
-## 2026-10-26：最小修正パッチを用意（未ビルド）
+## 2026-10-26：最小修正パッチを用意（初期の検証時点）
 
 [候補パッチ](../patches/0001-isolate-usb-profile-stack-and-fix-rom-metadata.patch) と[説明](../patches/README.md)を追加した。固定SHAのRon7 3ファイルから差分を生成して、全4ハンクが元ソースに**逐語一致して適用可能**なことをGitHub上の読取データで確認。ただし実際のARM GCCフルビルド・実機操作は未実施。
 
@@ -30,7 +30,7 @@
 - `linker.ld`：`.sram (NOLOAD)`候補。ホストClang/lldの最小ARM例では`.sram`がNOBITSになることは確認したが、Ron7の実ELFでROM LMA競合が消えたとは**未確認**。
 - `myevic.s`：MSC出力長を`RAMInitEnd`までにする候補。固定リンク定義のROM起点0を前提とし、書込用BINハッシュ・読み出しサイズをフルビルド後に実測する。
 
-**次のCodex開始手順（DOPEYに触れない）：**
+**次のCodex開始手順：**
 
 1. このEleafer PRブランチを取得し、Ron7固定SHAを別の隔離作業領域にcheckoutする。
 2. `python3 tests/offline/validate_ron7_minimal_patch.py --checkout <固定SHAのRon7 checkout>` を実行（内部で一時複製へ`git apply --check`／apply、元checkoutへの書込みなし）。
@@ -41,4 +41,4 @@
 
 ## 最新の切り分け
 
-パッチ0001は[実際のARMオフラインビルドでPASS](https://github.com/s1-mu-r4/Eleafer_Madness/actions/runs/40234610086)。FMCREAD最小のパッチ0002を追加し、同じ再現環境で再実行する。**DOPEYの週次・60分・ACK・追加Flashを追加実装しない。** 次のGateは純正LDROM復旧動作で、読取専用のGETINFO成功から復旧書込み成功を推定しない。
+パッチ0001は[実際のARMオフラインビルドでPASS](https://github.com/s1-mu-r4/Eleafer_Madness/actions/runs/40234610086)。FMCREAD最小のパッチ0002を追加し、同じ再現環境で再実行する。**Ron7既存の機能・保存形式を無断変更しない。** 次のGateは純正LDROM復旧動作で、読取専用のGETINFO成功から復旧書込み成功を推定しない。
