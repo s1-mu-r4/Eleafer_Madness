@@ -27,3 +27,13 @@ ELEAFER_RON7_SOURCE=/path/to/checkout-of-08202453b54c2284df27c9f188f66c2b2fb0f92
 履歴の機械可読な結果は [`evidence/ron7_artifact_audit_20261026.json`](../../evidence/ron7_artifact_audit_20261026.json)を参照。過去の`55件成功`は問題を再現する試験も含む。
 
 **絶対に実機へFWを送信しない。** 主目的はRon7版の現行機能の実機確認に必要な安全条件の整理であり、別プロジェクトの新機能実装ではない。
+
+## 2026-10-26 最小修正パッチの適用前検査
+
+固定Ron7 checkoutを**書き換えず**別の一時フォルダに対象3ファイルだけをコピーし、[修正候補パッチ](../../patches/0001-isolate-usb-profile-stack-and-fix-rom-metadata.patch)への`git apply --check`／`git apply`と6つのソース不変条件を確認するスクリプトを追加：
+
+```sh
+python3 tests/offline/validate_ron7_minimal_patch.py --checkout /path/to/ron7-at-08202453b
+```
+
+固定SHA一致と原本ファイルの無改変を先に検査する。**現時点でGitHub収録ソースに対する4ハンクの逐語適用検証済みだが、ユーザー／Codexローカルcheckoutでのスクリプト実行はNOT_RUN。** ARM GCCでのRon7フル再ビルド、スタック測定、USB動作・実機FIRE、FW書込みもNOT_RUN。
