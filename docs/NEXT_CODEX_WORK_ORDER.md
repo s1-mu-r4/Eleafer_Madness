@@ -21,3 +21,19 @@
 この**Eleafer Madness**のDraft PR #1に、最小修正の検討・パッチ候補（必要なら独立の研究用ブランチ）・テスト・明確な書込Go/No-Go判定を集約。ユーザー承認前に本番用FWを配布したり、実機へ書き込んだり、mainへマージしたりしない。
 
 **DOPEYリポジトリの変更は禁止。** この作業の合格条件にDOPEYの設計文書・機能追加を持ち込まない。純正復旧経路が確証できない場合は、No-Goのまま阻害理由を1件に集約して報告する。
+
+## 2026-10-26：最小修正パッチを用意（未ビルド）
+
+[候補パッチ](../patches/0001-isolate-usb-profile-stack-and-fix-rom-metadata.patch) と[説明](../patches/README.md)を追加した。固定SHAのRon7 3ファイルから差分を生成して、全4ハンクが元ソースに**逐語一致して適用可能**なことをGitHub上の読取データで確認。ただし実際のARM GCCフルビルド・実機操作は未実施。
+
+- `meusbd.c`：USB profile書込の2KiBローカル配列をnoinline helperへ分離。重なるSaveProfile呼出しの同時スタック使用を回避する候補であり、レジスタ退避・割込み・他calleeを含む安全なスタック余裕の証明は**まだない**。
+- `linker.ld`：`.sram (NOLOAD)`候補。ホストClang/lldの最小ARM例では`.sram`がNOBITSになることは確認したが、Ron7の実ELFでROM LMA競合が消えたとは**未確認**。
+- `myevic.s`：MSC出力長を`RAMInitEnd`までにする候補。固定リンク定義のROM起点0を前提とし、書込用BINハッシュ・読み出しサイズをフルビルド後に実測する。
+
+**次のCodex開始手順（DOPEYに触れない）：**
+
+1. このEleafer PRブランチを取得し、Ron7固定SHAを別の隔離作業領域にcheckoutする。
+2. `python3 tests/offline/validate_ron7_minimal_patch.py --checkout <固定SHAのRon7 checkout>` を実行（内部で一時複製へ`git apply --check`／apply、元checkoutへの書込みなし）。
+3. 作業用コピーにパッチを適用し、同一固定ツールでクリーンビルド2回／ELF・BIN照合／スタックフレーム全呼出し経路／USB MSCサイズを確認する。**合格を勝手に判定しない**。
+4. FMCREADの安全問題は別論点として、当該Ron7の既存使用契約を静的確認してから最小修正する。FIRE制限やDataFlash仕様は変更しない。
+5. 結果のみ本Draft PR #1へ反映、mainマージも実機書込みもなし。いずれかの検証が不成立ならNO-GOを維持する。
