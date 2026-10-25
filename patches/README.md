@@ -14,3 +14,10 @@ Unchanged: Ron7 `pufflimit` policy, dataflash layout, existing thermal/battery/s
 Known unaddressed risk: `HID_CMD_FMCREAD` bad precedence and missing address scope. A separate patch must either validate safe command bounds or make this mode unreachable; never use it on the real device before review.
 
 Run on isolated *pinned clean checkout*: `git apply --check <patch>`, then `git apply <patch>`, fixed SHA build, readelf, objdump, source tests. **Patch does not touch DOPEY.**
+
+
+## パッチ0002：FMCREADの受信長・アドレス算術チェック
+
+[0002-harden-fmcread-validation.patch](0002-harden-fmcread-validation.patch) は、Ron7既存の`hidFMCReadCmd`における`! len % EP2_MAX_PKT_SIZE`の優先順位不備を修正し、ゼロ長、64B非整列長、4B非整列アドレス、32-bitアドレス加算オーバーフローを拒否する。2KiB超の要求はもとのストリーミング読み込み仕様として保持する。原本Ron7固定SHAを変更せず、**0001の後で**適用する。受信コマンドの物理アドレスホワイトリストや、stock LDROMでの安全性を証明しない。
+
+[validate_fmcread_guard.py](../tests/offline/validate_fmcread_guard.py) はpatched Cから条件式を抽出し、スタンドアロンのCネイティブ11ベクトルで判定を検査する。実機には送信しない。パッチ0002適用後の全ARM再ビルドの結果を取得するまでは**修正済み合格と認定しない**。

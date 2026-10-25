@@ -48,6 +48,9 @@ for n in 1 2; do
     cd "$TMP/build$n"
     git apply --check "$ROOT/patches/0001-isolate-usb-profile-stack-and-fix-rom-metadata.patch"
     git apply "$ROOT/patches/0001-isolate-usb-profile-stack-and-fix-rom-metadata.patch"
+    git apply --check "$ROOT/patches/0002-harden-fmcread-validation.patch"
+    git apply "$ROOT/patches/0002-harden-fmcread-validation.patch"
+    python3 "$ROOT/tests/offline/validate_fmcread_guard.py" src/meusbd.c
     make clean
     make -f Makefile -f "$TMP/map.mk" -j2 all
   )

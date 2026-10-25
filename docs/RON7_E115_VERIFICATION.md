@@ -63,3 +63,22 @@
 4. **将来の別途承認のある実機テスト**：まずアトマイザ・セルなし起動／表示／USB認識。電気的FIRE保護・パフ数／時間窓／RTC喪失の確認は無害なベンチ条件が確立してから分離して行う。実行は未許可。
 
 **現在はFW実機書込NO-GO。元のRon7版で実機起動した実績はない。** 研究結果を試験合格や実機安全性の証明に昇格しない。
+
+
+## 2026-10-26 ARM GCC検証（Eleafer Actions #2）
+
+[Actions #2](https://github.com/s1-mu-r4/Eleafer_Madness/actions/runs/40234610086) にて**パッチ0001のみ**の固定ソース／GCC12.2.1隔離クリーンビルド2回が成功。ELF・平文BIN・変換BINがそれぞれ完全一致。パッチの一時複製適用チェック6件、合成ELF7件、公式ZIP形式モック6件、固定Ron7 C native14件が成功。実機未接続。
+
+| 項目 | パッチ0001結果 |
+|---|---|
+| ELF SHA256 | `98d6b105d66ef0b61afa54e11038ac78f0f7fcd01c63f2762580845f26111070` |
+| 平文BIN SHA256 | `12b64021b644afcfd9837a763cbb26d5ea1fa819c1078118445360951e14e2b3` |
+| 変換BIN SHA256 | `c102d6ab5c8bf77e7919e9ee35c1eb4103b4781cb8ea57c7ad58996d74dc56b7` |
+| ROMサイズ | 100,476B、残1,924B |
+| `hidGetOutReport` フレーム | 72B（元2,080B） |
+| `SaveProfile`／noinline helper | 2,072B／2,064B |
+| 直接ネストフレーム | 2,144B／2,136B、4KiB未満（割込み等の総計ではない） |
+| ELF `.sram` | NOBITS、PT_LOADバイト衝突なし |
+| MSC取得サイズ | RAMInitEndとBIN排他終端が一致 |
+
+**No-Go継続**：割込み最大スタック・保護機能の実機回帰・純正LDROM復旧可能性は未確認。パッチ0002 FMCREAD長さ・アドレスの境界検査は次の独立修正候補であり、Actions #2には含まれない。

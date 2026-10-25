@@ -1,0 +1,18 @@
+diff --git a/src/meusbd.c b/src/meusbd.c
+--- a/src/meusbd.c
++++ b/src/meusbd.c
+@@ -1019,10 +1019,13 @@
+ 	u32ParamLen  = pCmd->u32Arg2;
+ 
+ 	myprintf( "FMC Read command - Start Addr: %d    Param Len: %d\n", pCmd->u32Arg1, pCmd->u32Arg2 );
+ 
+-	if ( ! u32ParamLen % EP2_MAX_PKT_SIZE )
++	if ( u32ParamLen == 0 ||
++	     ( u32ParamLen % EP2_MAX_PKT_SIZE ) != 0 ||
++	     ( u32StartAddr & 3U ) != 0 ||
++	     u32StartAddr > ( 0xFFFFFFFFU - u32ParamLen ) )
+ 	{
+ 		return -1;
+ 	}
+ 
+ 	if ( u32ParamLen )
