@@ -1,0 +1,2371 @@
+{
+  "schema": "DOPEY_B1_E115_STOCK_OFFLINE_V1",
+  "date_utc": "2026-10-25",
+  "base_pr": 25,
+  "base_branch": "research/b1-vape-feasibility-20261025",
+  "base_commit": "085370681e13e3516e26bf33992f85585af41e3d",
+  "decision": {
+    "B1": "CONDITIONAL",
+    "Flash": "BLOCKED_HARDWARE",
+    "candidate": "0x19800–0x1D7FF"
+  },
+  "scope": "公式配布物の取得と静的解析。対象プログラム・実機は未実行。配布物はGitへ格納しない。",
+  "official_page": {
+    "url": "https://www.joyetech.com/mvr-software/?sid=189",
+    "http_status": 200,
+    "bytes": 49605,
+    "sha256": "00a5dc38976626a905a6a7a311530cf46323772693610e865fbd991b8838cdf5",
+    "download_link_html_lines": [
+      539,
+      540,
+      542,
+      543,
+      549,
+      550
+    ],
+    "title_html_line": 559
+  },
+  "packages": [
+    {
+      "local_name": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "source_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/V4_02/mac/UpdateFirmware.pkg.zip",
+      "effective_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/V4_02/mac/UpdateFirmware.pkg.zip",
+      "http_code": 200,
+      "retrieved_at_utc": "2026-10-25T14:44:09.323884+00:00",
+      "bytes": 505035,
+      "sha256": "e518b0a167abe6154ea0ea6f76c97619a7981f4df7501ce07f69a73c0f89b066",
+      "response_headers": {
+        "content-type": "application/zip",
+        "content-length": "505035",
+        "last-modified": "Wed, 09 Nov 2016 01:09:24 GMT",
+        "etag": "\"58227744-7b4cb\""
+      }
+    },
+    {
+      "local_name": "V4_02_win_UpdateFirmware.zip",
+      "source_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/V4_02/win/UpdateFirmware.zip",
+      "effective_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/V4_02/win/UpdateFirmware.zip",
+      "http_code": 200,
+      "retrieved_at_utc": "2026-10-25T14:44:11.535887+00:00",
+      "bytes": 3478518,
+      "sha256": "c540f13187432433d3b2371160ed1fa78d5f2342e7713328883c8cf42e2a0276",
+      "response_headers": {
+        "content-type": "application/zip",
+        "content-length": "3478518",
+        "last-modified": "Wed, 09 Nov 2016 01:09:48 GMT",
+        "etag": "\"5822775c-3513f6\""
+      }
+    },
+    {
+      "local_name": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "source_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/V4_04/mac/UpdateFirmware.pkg.zip",
+      "effective_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/V4_04/mac/UpdateFirmware.pkg.zip",
+      "http_code": 200,
+      "retrieved_at_utc": "2026-10-25T14:44:05.234994+00:00",
+      "bytes": 506355,
+      "sha256": "fd881fdadbc647210f3094501e1920cb42d6e79f2ef7aa159f99c0b0296b925c",
+      "response_headers": {
+        "content-type": "application/zip",
+        "content-length": "506355",
+        "last-modified": "Wed, 09 Nov 2016 01:10:30 GMT",
+        "etag": "\"58227786-7b9f3\""
+      }
+    },
+    {
+      "local_name": "V4_04_win_UpdateFirmware.zip",
+      "source_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/V4_04/win/UpdateFirmware.zip",
+      "effective_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/V4_04/win/UpdateFirmware.zip",
+      "http_code": 200,
+      "retrieved_at_utc": "2026-10-25T14:44:16.971942+00:00",
+      "bytes": 3479861,
+      "sha256": "b60cbde24c5fae07d30c47e2256813334bf10a8a80088cff885539730795b98e",
+      "response_headers": {
+        "content-type": "application/zip",
+        "content-length": "3479861",
+        "last-modified": "Wed, 09 Nov 2016 01:10:54 GMT",
+        "etag": "\"5822779e-351935\""
+      }
+    },
+    {
+      "local_name": "mac_UpdateFirmware.pkg.zip",
+      "source_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/mac/UpdateFirmware.pkg.zip",
+      "effective_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/mac/UpdateFirmware.pkg.zip",
+      "http_code": 200,
+      "retrieved_at_utc": "2026-10-25T14:44:04.398159+00:00",
+      "bytes": 507130,
+      "sha256": "f9c6085f9879243869e62d977819951e8180a858cac5ec6d0e823cddd58c2584",
+      "response_headers": {
+        "content-type": "application/zip",
+        "content-length": "507130",
+        "last-modified": "Wed, 09 Nov 2016 01:11:41 GMT",
+        "etag": "\"582277cd-7bcfa\""
+      }
+    },
+    {
+      "local_name": "win_UpdateFirmware.zip",
+      "source_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/win/UpdateFirmware.zip",
+      "effective_url": "https://www.joyetech.com/wp-content/uploads/2016/05/evicvtwomini/win/UpdateFirmware.zip",
+      "http_code": 200,
+      "retrieved_at_utc": "2026-10-25T14:44:02.705483+00:00",
+      "bytes": 3480636,
+      "sha256": "20ed1e118745c25df8b3c4dda036a2cc0f1c45a0a3bae6955a41178517fb9ed9",
+      "response_headers": {
+        "content-type": "application/zip",
+        "content-length": "3480636",
+        "last-modified": "Wed, 09 Nov 2016 01:12:13 GMT",
+        "etag": "\"582277ed-351c3c\""
+      }
+    }
+  ],
+  "zip_members": [
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Archive.bom",
+      "bytes": 43411,
+      "sha256": "ae1188f299f0414027054f3f69381ceb07282a39f1fa8a0f81276387b88015d6",
+      "crc32": "c118dd80",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Archive.pax.gz",
+      "bytes": 483834,
+      "sha256": "541e57ff75834fc631bc51ec7d9df1c035865f90dc91cc22f42e8e709642e999",
+      "crc32": "eea74a0f",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Info.plist",
+      "bytes": 1483,
+      "sha256": "954d4143995726297511a62755b40ef9ed0298be9f24c9f829ad091b1e18ee7f",
+      "crc32": "ddc5fdd2",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/PkgInfo",
+      "bytes": 8,
+      "sha256": "e8321c2930396ab02f08f5c3ae9b89bc1405fb87b25de4a982a7b2715ae33d06",
+      "crc32": "96ed56ed",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/Archive.sizes",
+      "bytes": 49,
+      "sha256": "7620dbb9a6cd1dd79d3acbc17b7f8b86614cf75f02ad616a4f39172bdcda0f08",
+      "crc32": "810cae7f",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/Contents/Resources/._Archive.sizes",
+      "bytes": 167,
+      "sha256": "db23a909ecd3798907f0a23fbb612db3050760b73acce84b4bf4b980ccbe97d0",
+      "crc32": "aaa710b3",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/Description.plist",
+      "bytes": 433,
+      "sha256": "e248a4c191869159fa7954d4fb638f5f85fd8d7eea6ad85a4fdea6d48ac53fce",
+      "crc32": "a377e9c8",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/package_version",
+      "bytes": 18,
+      "sha256": "eb052f2c92fd34256d70518dfe71cebb1f5567289322ba1b440b87fc5e74475d",
+      "crc32": "bae605c4",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/Contents/Resources/._package_version",
+      "bytes": 167,
+      "sha256": "db23a909ecd3798907f0a23fbb612db3050760b73acce84b4bf4b980ccbe97d0",
+      "crc32": "aaa710b3",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.bom",
+      "bytes": 14,
+      "sha256": "9602318afe5261de64f76aa9b0be06777d3d3134d1ad2ecf8e1b411de26fa2e1",
+      "crc32": "3fbc70af",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.info",
+      "bytes": 271,
+      "sha256": "c7e6f1a54f259edcb9e864de832eb76af52654dafbc97a8b7753a3c60badea60",
+      "crc32": "4c5bb5ec",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/Contents/Resources/._UpdateFirmware.info",
+      "bytes": 167,
+      "sha256": "db23a909ecd3798907f0a23fbb612db3050760b73acce84b4bf4b980ccbe97d0",
+      "crc32": "aaa710b3",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.pax.gz",
+      "bytes": 17,
+      "sha256": "243d75d83fd02226d50a43c897a00e821857c5b525cbacf37a6905c23a231350",
+      "crc32": "fedbf1d5",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.sizes",
+      "bytes": 15,
+      "sha256": "b4e435ee5f44ffd1e16a7e010e4a9d92fe740d7e6d3f15f95f171a225654f1a7",
+      "crc32": "8492d242",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Icon\r",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "crc32": "00000000",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/._Icon\r",
+      "bytes": 29917,
+      "sha256": "19e4bfd7a2dad208a678ad0043b1e547084da960f1bc829fadd83567a987a2ad",
+      "crc32": "095a14be",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/._UpdateFirmware.pkg",
+      "bytes": 120,
+      "sha256": "7e8966d42efda37168c15b80371b80d2fdf85450b4f252d63b103a359bb8a9f2",
+      "crc32": "30e371ab",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        16,
+        54
+      ]
+    },
+    {
+      "archive": "V4_02_win_UpdateFirmware.zip",
+      "member": "eVic_VTwo_mini_V4.02.bin",
+      "bytes": 68744,
+      "sha256": "f577d58c2917ecc70c18614bf3c1a9787ea6d126a215caf4e04d3e90289e52a7",
+      "crc32": "ca6d5701",
+      "zip_time_unverified": [
+        2016,
+        9,
+        13,
+        17,
+        15,
+        58
+      ]
+    },
+    {
+      "archive": "V4_02_win_UpdateFirmware.zip",
+      "member": "UpdateFirmware.exe",
+      "bytes": 9972224,
+      "sha256": "9d1016e88791f9cb80f625a01c01970704e334a02039d52c76f5aea52c9b241f",
+      "crc32": "349a5272",
+      "zip_time_unverified": [
+        2016,
+        6,
+        12,
+        10,
+        1,
+        50
+      ]
+    },
+    {
+      "archive": "V4_02_win_UpdateFirmware.zip",
+      "member": "Logo.bmp",
+      "bytes": 382,
+      "sha256": "4c86e48f209f192b7eb306f837214622a8a722d38231732db4e43b43dbce1fb4",
+      "crc32": "e480d21d",
+      "zip_time_unverified": [
+        2016,
+        4,
+        18,
+        13,
+        51,
+        14
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Archive.bom",
+      "bytes": 43411,
+      "sha256": "e9b40f15ae8bf1afe1125882fb0090fe66632589c02f039da7e2461aaf58e804",
+      "crc32": "bd49a617",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Archive.pax.gz",
+      "bytes": 485170,
+      "sha256": "ab57711879ed96b3a91d69a576b907185adec6a0cd009621a6e388678dab704e",
+      "crc32": "ddcbc756",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Info.plist",
+      "bytes": 1483,
+      "sha256": "3338b4d7d3b994f41c5c3d7ee72f566cbb8e04e8e1c74076a3190a3d9531a316",
+      "crc32": "b6808681",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/PkgInfo",
+      "bytes": 8,
+      "sha256": "e8321c2930396ab02f08f5c3ae9b89bc1405fb87b25de4a982a7b2715ae33d06",
+      "crc32": "96ed56ed",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/Archive.sizes",
+      "bytes": 49,
+      "sha256": "d22ad46b773308fd1cb408155664b401f8f905194ba620d5555e11ebafb1be2a",
+      "crc32": "93f5aac4",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/Contents/Resources/._Archive.sizes",
+      "bytes": 167,
+      "sha256": "db23a909ecd3798907f0a23fbb612db3050760b73acce84b4bf4b980ccbe97d0",
+      "crc32": "aaa710b3",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/Description.plist",
+      "bytes": 433,
+      "sha256": "e248a4c191869159fa7954d4fb638f5f85fd8d7eea6ad85a4fdea6d48ac53fce",
+      "crc32": "a377e9c8",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/package_version",
+      "bytes": 18,
+      "sha256": "eb052f2c92fd34256d70518dfe71cebb1f5567289322ba1b440b87fc5e74475d",
+      "crc32": "bae605c4",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/Contents/Resources/._package_version",
+      "bytes": 167,
+      "sha256": "db23a909ecd3798907f0a23fbb612db3050760b73acce84b4bf4b980ccbe97d0",
+      "crc32": "aaa710b3",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.bom",
+      "bytes": 14,
+      "sha256": "9602318afe5261de64f76aa9b0be06777d3d3134d1ad2ecf8e1b411de26fa2e1",
+      "crc32": "3fbc70af",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.info",
+      "bytes": 271,
+      "sha256": "c7e6f1a54f259edcb9e864de832eb76af52654dafbc97a8b7753a3c60badea60",
+      "crc32": "4c5bb5ec",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/Contents/Resources/._UpdateFirmware.info",
+      "bytes": 167,
+      "sha256": "db23a909ecd3798907f0a23fbb612db3050760b73acce84b4bf4b980ccbe97d0",
+      "crc32": "aaa710b3",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.pax.gz",
+      "bytes": 17,
+      "sha256": "243d75d83fd02226d50a43c897a00e821857c5b525cbacf37a6905c23a231350",
+      "crc32": "fedbf1d5",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.sizes",
+      "bytes": 15,
+      "sha256": "b4e435ee5f44ffd1e16a7e010e4a9d92fe740d7e6d3f15f95f171a225654f1a7",
+      "crc32": "8492d242",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Icon\r",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "crc32": "00000000",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/._Icon\r",
+      "bytes": 29917,
+      "sha256": "0b8c33144aac511a7d74e9b885683b5dccb437b09289c56a13b25377fbeeeeae",
+      "crc32": "f1743e7f",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/._UpdateFirmware.pkg",
+      "bytes": 120,
+      "sha256": "7e8966d42efda37168c15b80371b80d2fdf85450b4f252d63b103a359bb8a9f2",
+      "crc32": "30e371ab",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "archive": "V4_04_win_UpdateFirmware.zip",
+      "member": "eVic_VTwo_mini_V4.04.bin",
+      "bytes": 70072,
+      "sha256": "48f9fffe31a7663178a7dcaa80b9f8fada71842f3931144e8e1d8fb722bc1e7d",
+      "crc32": "744acca6",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        2,
+        52
+      ]
+    },
+    {
+      "archive": "V4_04_win_UpdateFirmware.zip",
+      "member": "UpdateFirmware.exe",
+      "bytes": 9972224,
+      "sha256": "9d1016e88791f9cb80f625a01c01970704e334a02039d52c76f5aea52c9b241f",
+      "crc32": "349a5272",
+      "zip_time_unverified": [
+        2016,
+        6,
+        12,
+        10,
+        1,
+        50
+      ]
+    },
+    {
+      "archive": "V4_04_win_UpdateFirmware.zip",
+      "member": "Logo.bmp",
+      "bytes": 382,
+      "sha256": "4c86e48f209f192b7eb306f837214622a8a722d38231732db4e43b43dbce1fb4",
+      "crc32": "e480d21d",
+      "zip_time_unverified": [
+        2016,
+        4,
+        18,
+        13,
+        51,
+        14
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Archive.bom",
+      "bytes": 43411,
+      "sha256": "a4c563a5a4f35aa1aac51bac49a41b0302acb5b96de7f442b5cfc76dfad6ab58",
+      "crc32": "8abbef30",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Archive.pax.gz",
+      "bytes": 485928,
+      "sha256": "25f5723d524572d60fae9d3a2d1dab2f80f863137603ea443afa1c98301e6b38",
+      "crc32": "80fc1ed5",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Info.plist",
+      "bytes": 1483,
+      "sha256": "bee26b9e92b8b8304e00b1f5b2c48aea362095b84036e0f0f77b63a0005c264a",
+      "crc32": "992a438b",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/PkgInfo",
+      "bytes": 8,
+      "sha256": "e8321c2930396ab02f08f5c3ae9b89bc1405fb87b25de4a982a7b2715ae33d06",
+      "crc32": "96ed56ed",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/Archive.sizes",
+      "bytes": 49,
+      "sha256": "d22ad46b773308fd1cb408155664b401f8f905194ba620d5555e11ebafb1be2a",
+      "crc32": "93f5aac4",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/Contents/Resources/._Archive.sizes",
+      "bytes": 167,
+      "sha256": "db23a909ecd3798907f0a23fbb612db3050760b73acce84b4bf4b980ccbe97d0",
+      "crc32": "aaa710b3",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/Description.plist",
+      "bytes": 433,
+      "sha256": "e248a4c191869159fa7954d4fb638f5f85fd8d7eea6ad85a4fdea6d48ac53fce",
+      "crc32": "a377e9c8",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/package_version",
+      "bytes": 18,
+      "sha256": "eb052f2c92fd34256d70518dfe71cebb1f5567289322ba1b440b87fc5e74475d",
+      "crc32": "bae605c4",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/Contents/Resources/._package_version",
+      "bytes": 167,
+      "sha256": "db23a909ecd3798907f0a23fbb612db3050760b73acce84b4bf4b980ccbe97d0",
+      "crc32": "aaa710b3",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.bom",
+      "bytes": 14,
+      "sha256": "9602318afe5261de64f76aa9b0be06777d3d3134d1ad2ecf8e1b411de26fa2e1",
+      "crc32": "3fbc70af",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.info",
+      "bytes": 271,
+      "sha256": "c7e6f1a54f259edcb9e864de832eb76af52654dafbc97a8b7753a3c60badea60",
+      "crc32": "4c5bb5ec",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/Contents/Resources/._UpdateFirmware.info",
+      "bytes": 167,
+      "sha256": "db23a909ecd3798907f0a23fbb612db3050760b73acce84b4bf4b980ccbe97d0",
+      "crc32": "aaa710b3",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.pax.gz",
+      "bytes": 17,
+      "sha256": "243d75d83fd02226d50a43c897a00e821857c5b525cbacf37a6905c23a231350",
+      "crc32": "fedbf1d5",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Contents/Resources/UpdateFirmware.sizes",
+      "bytes": 15,
+      "sha256": "b4e435ee5f44ffd1e16a7e010e4a9d92fe740d7e6d3f15f95f171a225654f1a7",
+      "crc32": "8492d242",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "UpdateFirmware.pkg/Icon\r",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "crc32": "00000000",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/UpdateFirmware.pkg/._Icon\r",
+      "bytes": 29917,
+      "sha256": "f26ab0ea139d7cc027f7d8d08b42cd11d84f3fbaf396bb179bf970db6c576d39",
+      "crc32": "3f3f15c1",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "mac_UpdateFirmware.pkg.zip",
+      "member": "__MACOSX/._UpdateFirmware.pkg",
+      "bytes": 120,
+      "sha256": "7e8966d42efda37168c15b80371b80d2fdf85450b4f252d63b103a359bb8a9f2",
+      "crc32": "30e371ab",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "archive": "win_UpdateFirmware.zip",
+      "member": "eVic_VTwo_mini_V5.04.bin",
+      "bytes": 70904,
+      "sha256": "c2dfa3034828b06081567eb384d90d8b5e2c9e8be8917a116cc8c2e1954f7274",
+      "crc32": "7c73883f",
+      "zip_time_unverified": [
+        2016,
+        9,
+        14,
+        9,
+        53,
+        38
+      ]
+    },
+    {
+      "archive": "win_UpdateFirmware.zip",
+      "member": "UpdateFirmware.exe",
+      "bytes": 9972224,
+      "sha256": "9d1016e88791f9cb80f625a01c01970704e334a02039d52c76f5aea52c9b241f",
+      "crc32": "349a5272",
+      "zip_time_unverified": [
+        2016,
+        6,
+        12,
+        10,
+        1,
+        50
+      ]
+    },
+    {
+      "archive": "win_UpdateFirmware.zip",
+      "member": "Logo.bmp",
+      "bytes": 382,
+      "sha256": "4c86e48f209f192b7eb306f837214622a8a722d38231732db4e43b43dbce1fb4",
+      "crc32": "e480d21d",
+      "zip_time_unverified": [
+        2016,
+        4,
+        18,
+        13,
+        51,
+        14
+      ]
+    }
+  ],
+  "mac_payload_regular_file_manifest": {
+    "Contents/_CodeSignature/CodeResources": {
+      "bytes": 7310,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "f53ba7939e4182626e9726f33afea15a886cabf949c479def155d99853266a1d",
+        "V4_04_mac_UpdateFirmware.pkg": "258b39eabaec0983ea5e32a007551b2ee8420dd6a3dfbc748bd8130f1d0f1f44",
+        "mac_UpdateFirmware.pkg": "1c402560cd5a2c99956a3cd6b861fa8a2a3f0a2128d4c7823610707c8ca4d1da"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/_CodeSignature/CodeResources": {
+      "bytes": 22064,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "81d46743ee3d62eb4af6f2cbe00b2901dc83685f0af519b9cb1be6ca7fa8d7a1",
+        "V4_04_mac_UpdateFirmware.pkg": "81d46743ee3d62eb4af6f2cbe00b2901dc83685f0af519b9cb1be6ca7fa8d7a1",
+        "mac_UpdateFirmware.pkg": "81d46743ee3d62eb4af6f2cbe00b2901dc83685f0af519b9cb1be6ca7fa8d7a1"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/CorePlot": {
+      "bytes": 998432,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "fbd18a6a590088d79fabad447aaa10190ef708c227e0163bf2a5ef13b1f43130",
+        "V4_04_mac_UpdateFirmware.pkg": "14227e7473c0b68a66b31ce174b9db28325a629e5a9705aa897f3996acf18e62",
+        "mac_UpdateFirmware.pkg": "3452a9e28668bf359149bfee09be0068092b5abdbb52042d9bc8df84eb2710fd"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CorePlot.h": {
+      "bytes": 2467,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "6ffb96cd313412e332fcc6d7e088f4afd8320736526c146b18bb60028876a5df",
+        "V4_04_mac_UpdateFirmware.pkg": "6ffb96cd313412e332fcc6d7e088f4afd8320736526c146b18bb60028876a5df",
+        "mac_UpdateFirmware.pkg": "6ffb96cd313412e332fcc6d7e088f4afd8320736526c146b18bb60028876a5df"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTAnimation.h": {
+      "bytes": 5027,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "69e8b515c619d4f28265bef70eb4cf9c82853a10208a8304c6052e3d380ae498",
+        "V4_04_mac_UpdateFirmware.pkg": "69e8b515c619d4f28265bef70eb4cf9c82853a10208a8304c6052e3d380ae498",
+        "mac_UpdateFirmware.pkg": "69e8b515c619d4f28265bef70eb4cf9c82853a10208a8304c6052e3d380ae498"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTAnimationOperation.h": {
+      "bytes": 1044,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "3d192f170ed89c83a6b2ccd771ed2a5c256575755b71eacf37e5ebbf1824d286",
+        "V4_04_mac_UpdateFirmware.pkg": "3d192f170ed89c83a6b2ccd771ed2a5c256575755b71eacf37e5ebbf1824d286",
+        "mac_UpdateFirmware.pkg": "3d192f170ed89c83a6b2ccd771ed2a5c256575755b71eacf37e5ebbf1824d286"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTAnimationPeriod.h": {
+      "bytes": 7204,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "b2b716e4f0d504e884feea70a27d2c1fb6c05ccf60bb0be925106de2836e5c93",
+        "V4_04_mac_UpdateFirmware.pkg": "b2b716e4f0d504e884feea70a27d2c1fb6c05ccf60bb0be925106de2836e5c93",
+        "mac_UpdateFirmware.pkg": "b2b716e4f0d504e884feea70a27d2c1fb6c05ccf60bb0be925106de2836e5c93"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTAnnotation.h": {
+      "bytes": 933,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "7236cba94ba29aa5a6da40fe9fe55d02f22f54d76325620f6c5cd81f1926bea3",
+        "V4_04_mac_UpdateFirmware.pkg": "7236cba94ba29aa5a6da40fe9fe55d02f22f54d76325620f6c5cd81f1926bea3",
+        "mac_UpdateFirmware.pkg": "7236cba94ba29aa5a6da40fe9fe55d02f22f54d76325620f6c5cd81f1926bea3"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTAnnotationHostLayer.h": {
+      "bytes": 385,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "bbcf87679d1fd83b1be2b93f13ecd4b7549a7e3bbc984d7b91aee7eac4f1f519",
+        "V4_04_mac_UpdateFirmware.pkg": "bbcf87679d1fd83b1be2b93f13ecd4b7549a7e3bbc984d7b91aee7eac4f1f519",
+        "mac_UpdateFirmware.pkg": "bbcf87679d1fd83b1be2b93f13ecd4b7549a7e3bbc984d7b91aee7eac4f1f519"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTAxis.h": {
+      "bytes": 11129,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "7a9ada83ac002477c8c69bc8cd3b7d0536a327ba7b4be227e54cf7ca2bad6c5e",
+        "V4_04_mac_UpdateFirmware.pkg": "7a9ada83ac002477c8c69bc8cd3b7d0536a327ba7b4be227e54cf7ca2bad6c5e",
+        "mac_UpdateFirmware.pkg": "7a9ada83ac002477c8c69bc8cd3b7d0536a327ba7b4be227e54cf7ca2bad6c5e"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTAxisLabel.h": {
+      "bytes": 1033,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "69229122cb3a12aca7d9b3fadb890b2c6b063e3d49fd92cfdffaa3c688b1da45",
+        "V4_04_mac_UpdateFirmware.pkg": "69229122cb3a12aca7d9b3fadb890b2c6b063e3d49fd92cfdffaa3c688b1da45",
+        "mac_UpdateFirmware.pkg": "69229122cb3a12aca7d9b3fadb890b2c6b063e3d49fd92cfdffaa3c688b1da45"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTAxisSet.h": {
+      "bytes": 522,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "9141ac15bd451223f04856ab6e29c4af111074844cf29de48ba46472f8995bc7",
+        "V4_04_mac_UpdateFirmware.pkg": "9141ac15bd451223f04856ab6e29c4af111074844cf29de48ba46472f8995bc7",
+        "mac_UpdateFirmware.pkg": "9141ac15bd451223f04856ab6e29c4af111074844cf29de48ba46472f8995bc7"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTAxisTitle.h": {
+      "bytes": 75,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "1f136cbfd9e2693c15a0c41ff2177a5d7836c39bfeff85002f8016176caec3e9",
+        "V4_04_mac_UpdateFirmware.pkg": "1f136cbfd9e2693c15a0c41ff2177a5d7836c39bfeff85002f8016176caec3e9",
+        "mac_UpdateFirmware.pkg": "1f136cbfd9e2693c15a0c41ff2177a5d7836c39bfeff85002f8016176caec3e9"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTBarPlot.h": {
+      "bytes": 6148,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "f4fb86a2617d91a4adb910ea095ec93adabf1cb668900168e12fa8edd1ff1bb7",
+        "V4_04_mac_UpdateFirmware.pkg": "f4fb86a2617d91a4adb910ea095ec93adabf1cb668900168e12fa8edd1ff1bb7",
+        "mac_UpdateFirmware.pkg": "f4fb86a2617d91a4adb910ea095ec93adabf1cb668900168e12fa8edd1ff1bb7"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTBorderedLayer.h": {
+      "bytes": 560,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "9a31f4cb5dad40cb9aa2b0c908a9010c8f53e244f0bc9024710a0c963ff83abc",
+        "V4_04_mac_UpdateFirmware.pkg": "9a31f4cb5dad40cb9aa2b0c908a9010c8f53e244f0bc9024710a0c963ff83abc",
+        "mac_UpdateFirmware.pkg": "9a31f4cb5dad40cb9aa2b0c908a9010c8f53e244f0bc9024710a0c963ff83abc"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTCalendarFormatter.h": {
+      "bytes": 602,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "31eac4c8d6c52808be00bffddf5fa505d4b18628fa75304152acadee5a76addc",
+        "V4_04_mac_UpdateFirmware.pkg": "31eac4c8d6c52808be00bffddf5fa505d4b18628fa75304152acadee5a76addc",
+        "mac_UpdateFirmware.pkg": "31eac4c8d6c52808be00bffddf5fa505d4b18628fa75304152acadee5a76addc"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTColor.h": {
+      "bytes": 1098,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "1a6947b2c1a50d2095f32bc497200da0ccb30ff8fc6dfaca2657a603d217d901",
+        "V4_04_mac_UpdateFirmware.pkg": "1a6947b2c1a50d2095f32bc497200da0ccb30ff8fc6dfaca2657a603d217d901",
+        "mac_UpdateFirmware.pkg": "1a6947b2c1a50d2095f32bc497200da0ccb30ff8fc6dfaca2657a603d217d901"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTColorSpace.h": {
+      "bytes": 345,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "6e6f21a83e24a1d344e9f6fb09287656c0a2ef743b5d75f41429639b27d2fa86",
+        "V4_04_mac_UpdateFirmware.pkg": "6e6f21a83e24a1d344e9f6fb09287656c0a2ef743b5d75f41429639b27d2fa86",
+        "mac_UpdateFirmware.pkg": "6e6f21a83e24a1d344e9f6fb09287656c0a2ef743b5d75f41429639b27d2fa86"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTConstraints.h": {
+      "bytes": 880,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "e3f35d33ab422a991f608e2a61c90b1df27e8a8ef5974e184142a7438f6ea4f3",
+        "V4_04_mac_UpdateFirmware.pkg": "e3f35d33ab422a991f608e2a61c90b1df27e8a8ef5974e184142a7438f6ea4f3",
+        "mac_UpdateFirmware.pkg": "e3f35d33ab422a991f608e2a61c90b1df27e8a8ef5974e184142a7438f6ea4f3"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTDecimalNumberValueTransformer.h": {
+      "bytes": 75,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "d03117c33bec81ec0b7fc7d3386c43d76f5f7721d97c08cae086572b846a508f",
+        "V4_04_mac_UpdateFirmware.pkg": "d03117c33bec81ec0b7fc7d3386c43d76f5f7721d97c08cae086572b846a508f",
+        "mac_UpdateFirmware.pkg": "d03117c33bec81ec0b7fc7d3386c43d76f5f7721d97c08cae086572b846a508f"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTDefinitions.h": {
+      "bytes": 5913,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "2e39203c39368d42ad3aeb61657276c317ee2108f63c11f4a208daac009922c8",
+        "V4_04_mac_UpdateFirmware.pkg": "2e39203c39368d42ad3aeb61657276c317ee2108f63c11f4a208daac009922c8",
+        "mac_UpdateFirmware.pkg": "2e39203c39368d42ad3aeb61657276c317ee2108f63c11f4a208daac009922c8"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTExceptions.h": {
+      "bytes": 190,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "763aaac966a5e38c65bb5fe4cae199838156882e133f82286378d7ac7fe8186e",
+        "V4_04_mac_UpdateFirmware.pkg": "763aaac966a5e38c65bb5fe4cae199838156882e133f82286378d7ac7fe8186e",
+        "mac_UpdateFirmware.pkg": "763aaac966a5e38c65bb5fe4cae199838156882e133f82286378d7ac7fe8186e"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTFill.h": {
+      "bytes": 838,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "8908fe2cb2ff09c2393cf40a4c9bd9b63c7356e5e4d4db5d26c3463d12f1dcb1",
+        "V4_04_mac_UpdateFirmware.pkg": "8908fe2cb2ff09c2393cf40a4c9bd9b63c7356e5e4d4db5d26c3463d12f1dcb1",
+        "mac_UpdateFirmware.pkg": "8908fe2cb2ff09c2393cf40a4c9bd9b63c7356e5e4d4db5d26c3463d12f1dcb1"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTFunctionDataSource.h": {
+      "bytes": 1111,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "32e604c39b41d4c014e66d0018529105b5d3f9710540190d8176db773e77b457",
+        "V4_04_mac_UpdateFirmware.pkg": "32e604c39b41d4c014e66d0018529105b5d3f9710540190d8176db773e77b457",
+        "mac_UpdateFirmware.pkg": "32e604c39b41d4c014e66d0018529105b5d3f9710540190d8176db773e77b457"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTGradient.h": {
+      "bytes": 3455,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "3a3f39296c1861c92eb72cc1d1a7f5a544be59bdb0030d9937ba4841cf3b6967",
+        "V4_04_mac_UpdateFirmware.pkg": "3a3f39296c1861c92eb72cc1d1a7f5a544be59bdb0030d9937ba4841cf3b6967",
+        "mac_UpdateFirmware.pkg": "3a3f39296c1861c92eb72cc1d1a7f5a544be59bdb0030d9937ba4841cf3b6967"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTGraph.h": {
+      "bytes": 3893,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "97e90fe5380b8c8a5e6bbca6bd208e549bc841d3c02ac54695b7d108b908fe72",
+        "V4_04_mac_UpdateFirmware.pkg": "97e90fe5380b8c8a5e6bbca6bd208e549bc841d3c02ac54695b7d108b908fe72",
+        "mac_UpdateFirmware.pkg": "97e90fe5380b8c8a5e6bbca6bd208e549bc841d3c02ac54695b7d108b908fe72"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTGraphHostingView.h": {
+      "bytes": 279,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "1097d313e352d6d8abecd77b63bf507b60f38b3c0dcf2ae29200122af0ea12de",
+        "V4_04_mac_UpdateFirmware.pkg": "1097d313e352d6d8abecd77b63bf507b60f38b3c0dcf2ae29200122af0ea12de",
+        "mac_UpdateFirmware.pkg": "1097d313e352d6d8abecd77b63bf507b60f38b3c0dcf2ae29200122af0ea12de"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTImage.h": {
+      "bytes": 981,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "243ea7c0d2363ac3c3115237aface61fc0822922ee09b2d9507a8e687da961ed",
+        "V4_04_mac_UpdateFirmware.pkg": "243ea7c0d2363ac3c3115237aface61fc0822922ee09b2d9507a8e687da961ed",
+        "mac_UpdateFirmware.pkg": "243ea7c0d2363ac3c3115237aface61fc0822922ee09b2d9507a8e687da961ed"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTLayer.h": {
+      "bytes": 3165,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "c80e33f15dd60ba1cd89366ee3a3126bf94a74efc2978749e3f41df55b263fed",
+        "V4_04_mac_UpdateFirmware.pkg": "c80e33f15dd60ba1cd89366ee3a3126bf94a74efc2978749e3f41df55b263fed",
+        "mac_UpdateFirmware.pkg": "c80e33f15dd60ba1cd89366ee3a3126bf94a74efc2978749e3f41df55b263fed"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTLayerAnnotation.h": {
+      "bytes": 487,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "ff884fcd9e8b67e1c38b490656aec671d8b04c36258f9a2ff7fd850cad88b40a",
+        "V4_04_mac_UpdateFirmware.pkg": "ff884fcd9e8b67e1c38b490656aec671d8b04c36258f9a2ff7fd850cad88b40a",
+        "mac_UpdateFirmware.pkg": "ff884fcd9e8b67e1c38b490656aec671d8b04c36258f9a2ff7fd850cad88b40a"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTLegend.h": {
+      "bytes": 7975,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "6696931569fcfa44f7ec18cb0b7a95fd433ca459332ce5c86d6a95401f5cff6e",
+        "V4_04_mac_UpdateFirmware.pkg": "6696931569fcfa44f7ec18cb0b7a95fd433ca459332ce5c86d6a95401f5cff6e",
+        "mac_UpdateFirmware.pkg": "6696931569fcfa44f7ec18cb0b7a95fd433ca459332ce5c86d6a95401f5cff6e"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTLegendEntry.h": {
+      "bytes": 864,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "03118b1844d1d7ed56f73c3fe1df8eec2b43cb91d103514b456908ec27cb30c3",
+        "V4_04_mac_UpdateFirmware.pkg": "03118b1844d1d7ed56f73c3fe1df8eec2b43cb91d103514b456908ec27cb30c3",
+        "mac_UpdateFirmware.pkg": "03118b1844d1d7ed56f73c3fe1df8eec2b43cb91d103514b456908ec27cb30c3"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTLimitBand.h": {
+      "bytes": 516,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "a7d2b8a5fed38d6ba82b86f443dffa2760570d378c07c9699d072c6d059c2bf6",
+        "V4_04_mac_UpdateFirmware.pkg": "a7d2b8a5fed38d6ba82b86f443dffa2760570d378c07c9699d072c6d059c2bf6",
+        "mac_UpdateFirmware.pkg": "a7d2b8a5fed38d6ba82b86f443dffa2760570d378c07c9699d072c6d059c2bf6"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTLineCap.h": {
+      "bytes": 2129,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "9fe0378dee06d2503a9cd869c12162e3d230d63fbe004d6dc89512929b213191",
+        "V4_04_mac_UpdateFirmware.pkg": "9fe0378dee06d2503a9cd869c12162e3d230d63fbe004d6dc89512929b213191",
+        "mac_UpdateFirmware.pkg": "9fe0378dee06d2503a9cd869c12162e3d230d63fbe004d6dc89512929b213191"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTLineStyle.h": {
+      "bytes": 1400,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "7a1b4f122eb14905e581b4e7e2f0f5ebe76d45236a6c5f4daa00cc01a8546cb5",
+        "V4_04_mac_UpdateFirmware.pkg": "7a1b4f122eb14905e581b4e7e2f0f5ebe76d45236a6c5f4daa00cc01a8546cb5",
+        "mac_UpdateFirmware.pkg": "7a1b4f122eb14905e581b4e7e2f0f5ebe76d45236a6c5f4daa00cc01a8546cb5"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTMutableLineStyle.h": {
+      "bytes": 660,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "3cc806c2fe8e59aa69086aabc32193ea561c41143669384fc2c519a42e2c73c9",
+        "V4_04_mac_UpdateFirmware.pkg": "3cc806c2fe8e59aa69086aabc32193ea561c41143669384fc2c519a42e2c73c9",
+        "mac_UpdateFirmware.pkg": "3cc806c2fe8e59aa69086aabc32193ea561c41143669384fc2c519a42e2c73c9"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTMutableNumericData+TypeConversion.h": {
+      "bytes": 668,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "3acb3ef6ce56eea66c95c428719c15ddbacf11788b0b03f990a954fe01488caa",
+        "V4_04_mac_UpdateFirmware.pkg": "3acb3ef6ce56eea66c95c428719c15ddbacf11788b0b03f990a954fe01488caa",
+        "mac_UpdateFirmware.pkg": "3acb3ef6ce56eea66c95c428719c15ddbacf11788b0b03f990a954fe01488caa"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTMutableNumericData.h": {
+      "bytes": 277,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "d0aaf8290715ef8970691bfc028489e17d1d96b116d9feff40922ae18318e1f3",
+        "V4_04_mac_UpdateFirmware.pkg": "d0aaf8290715ef8970691bfc028489e17d1d96b116d9feff40922ae18318e1f3",
+        "mac_UpdateFirmware.pkg": "d0aaf8290715ef8970691bfc028489e17d1d96b116d9feff40922ae18318e1f3"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTMutablePlotRange.h": {
+      "bytes": 631,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "56837a5c441c5dfe1868bcecb31342a249da7ba2af7fdad5f84de25a6027fa67",
+        "V4_04_mac_UpdateFirmware.pkg": "56837a5c441c5dfe1868bcecb31342a249da7ba2af7fdad5f84de25a6027fa67",
+        "mac_UpdateFirmware.pkg": "56837a5c441c5dfe1868bcecb31342a249da7ba2af7fdad5f84de25a6027fa67"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTMutableShadow.h": {
+      "bytes": 285,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "7f3fcbc1a69c5df126d154b3c10b74e38c94db004f0432d419902d7504b98ce0",
+        "V4_04_mac_UpdateFirmware.pkg": "7f3fcbc1a69c5df126d154b3c10b74e38c94db004f0432d419902d7504b98ce0",
+        "mac_UpdateFirmware.pkg": "7f3fcbc1a69c5df126d154b3c10b74e38c94db004f0432d419902d7504b98ce0"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTMutableTextStyle.h": {
+      "bytes": 420,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "32ef98504bd486030433238298188fc2b9b5f4e00330c7a91f843b3cac409428",
+        "V4_04_mac_UpdateFirmware.pkg": "32ef98504bd486030433238298188fc2b9b5f4e00330c7a91f843b3cac409428",
+        "mac_UpdateFirmware.pkg": "32ef98504bd486030433238298188fc2b9b5f4e00330c7a91f843b3cac409428"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTNumericData+TypeConversion.h": {
+      "bytes": 780,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "4a30dc7e6e9b84ad08db9a6dc3cb8e44f7250a5ba78f6a0b65feff149982a57a",
+        "V4_04_mac_UpdateFirmware.pkg": "4a30dc7e6e9b84ad08db9a6dc3cb8e44f7250a5ba78f6a0b65feff149982a57a",
+        "mac_UpdateFirmware.pkg": "4a30dc7e6e9b84ad08db9a6dc3cb8e44f7250a5ba78f6a0b65feff149982a57a"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTNumericData.h": {
+      "bytes": 3386,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "e8745bf3a6f495fefd7c7789ee6f490f3991b6090c28d17ac6ecaba98192e87f",
+        "V4_04_mac_UpdateFirmware.pkg": "e8745bf3a6f495fefd7c7789ee6f490f3991b6090c28d17ac6ecaba98192e87f",
+        "mac_UpdateFirmware.pkg": "e8745bf3a6f495fefd7c7789ee6f490f3991b6090c28d17ac6ecaba98192e87f"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTNumericDataType.h": {
+      "bytes": 1704,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "ba6f3951535dd039bf2de166ad25d7ca0a7244d0880733ac67fe8dd2225790df",
+        "V4_04_mac_UpdateFirmware.pkg": "ba6f3951535dd039bf2de166ad25d7ca0a7244d0880733ac67fe8dd2225790df",
+        "mac_UpdateFirmware.pkg": "ba6f3951535dd039bf2de166ad25d7ca0a7244d0880733ac67fe8dd2225790df"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPathExtensions.h": {
+      "bytes": 224,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "0cec7487e9e113a054a78f01d303ae541ed820004eadad1b4f10ce2487e94915",
+        "V4_04_mac_UpdateFirmware.pkg": "0cec7487e9e113a054a78f01d303ae541ed820004eadad1b4f10ce2487e94915",
+        "mac_UpdateFirmware.pkg": "0cec7487e9e113a054a78f01d303ae541ed820004eadad1b4f10ce2487e94915"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPieChart.h": {
+      "bytes": 6071,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "b22d2a50939816ff9d6bb4da4ac3c5456ecf9e34bce695854e08fd246b27dbe2",
+        "V4_04_mac_UpdateFirmware.pkg": "b22d2a50939816ff9d6bb4da4ac3c5456ecf9e34bce695854e08fd246b27dbe2",
+        "mac_UpdateFirmware.pkg": "b22d2a50939816ff9d6bb4da4ac3c5456ecf9e34bce695854e08fd246b27dbe2"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlatformSpecificCategories.h": {
+      "bytes": 1299,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "6ed0aa8ca7096aaba177d8aca9f386f574127dcfade46ee150af984287dccdb5",
+        "V4_04_mac_UpdateFirmware.pkg": "6ed0aa8ca7096aaba177d8aca9f386f574127dcfade46ee150af984287dccdb5",
+        "mac_UpdateFirmware.pkg": "6ed0aa8ca7096aaba177d8aca9f386f574127dcfade46ee150af984287dccdb5"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlatformSpecificDefines.h": {
+      "bytes": 141,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "c16e29646ca7ae96573631e746ce59b27554cd6c3627a2c509d4d2da2d9fff3f",
+        "V4_04_mac_UpdateFirmware.pkg": "c16e29646ca7ae96573631e746ce59b27554cd6c3627a2c509d4d2da2d9fff3f",
+        "mac_UpdateFirmware.pkg": "c16e29646ca7ae96573631e746ce59b27554cd6c3627a2c509d4d2da2d9fff3f"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlatformSpecificFunctions.h": {
+      "bytes": 469,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "a76a109fd0375ecd8d64db54d52146237ce283ea1b1caa828e1315904f402fc9",
+        "V4_04_mac_UpdateFirmware.pkg": "a76a109fd0375ecd8d64db54d52146237ce283ea1b1caa828e1315904f402fc9",
+        "mac_UpdateFirmware.pkg": "a76a109fd0375ecd8d64db54d52146237ce283ea1b1caa828e1315904f402fc9"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlot.h": {
+      "bytes": 11434,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "334608bb185c8e33dc45930a572f0d0c66d0b97bf8507c713b1fbd3a3b3de74b",
+        "V4_04_mac_UpdateFirmware.pkg": "334608bb185c8e33dc45930a572f0d0c66d0b97bf8507c713b1fbd3a3b3de74b",
+        "mac_UpdateFirmware.pkg": "334608bb185c8e33dc45930a572f0d0c66d0b97bf8507c713b1fbd3a3b3de74b"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlotArea.h": {
+      "bytes": 2344,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "4bfe12bb1c214177b90558832d3381415e6417bcec7376bc24fbbe25be2273dc",
+        "V4_04_mac_UpdateFirmware.pkg": "4bfe12bb1c214177b90558832d3381415e6417bcec7376bc24fbbe25be2273dc",
+        "mac_UpdateFirmware.pkg": "4bfe12bb1c214177b90558832d3381415e6417bcec7376bc24fbbe25be2273dc"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlotAreaFrame.h": {
+      "bytes": 380,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "e06464b01edabd04e2c6c0c220072715112fbc726ea026445042b028cecc3feb",
+        "V4_04_mac_UpdateFirmware.pkg": "e06464b01edabd04e2c6c0c220072715112fbc726ea026445042b028cecc3feb",
+        "mac_UpdateFirmware.pkg": "e06464b01edabd04e2c6c0c220072715112fbc726ea026445042b028cecc3feb"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlotRange.h": {
+      "bytes": 2011,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "c22380679bc88bc39c69b6b8b412182f6b39cae79daa257bdfb4e900791ab9c4",
+        "V4_04_mac_UpdateFirmware.pkg": "c22380679bc88bc39c69b6b8b412182f6b39cae79daa257bdfb4e900791ab9c4",
+        "mac_UpdateFirmware.pkg": "c22380679bc88bc39c69b6b8b412182f6b39cae79daa257bdfb4e900791ab9c4"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlotSpace.h": {
+      "bytes": 7048,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "f439720931d3b4824971a8ef291810ac20b90baf5f51d741c1b6c1ac8f898372",
+        "V4_04_mac_UpdateFirmware.pkg": "f439720931d3b4824971a8ef291810ac20b90baf5f51d741c1b6c1ac8f898372",
+        "mac_UpdateFirmware.pkg": "f439720931d3b4824971a8ef291810ac20b90baf5f51d741c1b6c1ac8f898372"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlotSpaceAnnotation.h": {
+      "bytes": 396,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "9de235375864027339569ce3ee519c3b712de843767dfe1298b428574e724404",
+        "V4_04_mac_UpdateFirmware.pkg": "9de235375864027339569ce3ee519c3b712de843767dfe1298b428574e724404",
+        "mac_UpdateFirmware.pkg": "9de235375864027339569ce3ee519c3b712de843767dfe1298b428574e724404"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTPlotSymbol.h": {
+      "bytes": 2511,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "2c08fc72e33d48a54ffffe777c8900c0835a7264cd27796df4e336529af830a8",
+        "V4_04_mac_UpdateFirmware.pkg": "2c08fc72e33d48a54ffffe777c8900c0835a7264cd27796df4e336529af830a8",
+        "mac_UpdateFirmware.pkg": "2c08fc72e33d48a54ffffe777c8900c0835a7264cd27796df4e336529af830a8"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTRangePlot.h": {
+      "bytes": 3657,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "cf8e6a41f4e357092e2769c080ee300772f0048aa6b11c233f7da67aeb0c6c3f",
+        "V4_04_mac_UpdateFirmware.pkg": "cf8e6a41f4e357092e2769c080ee300772f0048aa6b11c233f7da67aeb0c6c3f",
+        "mac_UpdateFirmware.pkg": "cf8e6a41f4e357092e2769c080ee300772f0048aa6b11c233f7da67aeb0c6c3f"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTResponder.h": {
+      "bytes": 1749,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "90f35d5e059e174669326cdee8ec3953380197c0a7fc2529eb2c6355e859bfaf",
+        "V4_04_mac_UpdateFirmware.pkg": "90f35d5e059e174669326cdee8ec3953380197c0a7fc2529eb2c6355e859bfaf",
+        "mac_UpdateFirmware.pkg": "90f35d5e059e174669326cdee8ec3953380197c0a7fc2529eb2c6355e859bfaf"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTScatterPlot.h": {
+      "bytes": 4368,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "43195db48c78708cb30b8fcad5594c1740453eca3db859f435319a1411a2a91d",
+        "V4_04_mac_UpdateFirmware.pkg": "43195db48c78708cb30b8fcad5594c1740453eca3db859f435319a1411a2a91d",
+        "mac_UpdateFirmware.pkg": "43195db48c78708cb30b8fcad5594c1740453eca3db859f435319a1411a2a91d"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTShadow.h": {
+      "bytes": 521,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "6a0fe2d1f1102d96420e38e866fb20ea453c3817c2c43717524ae202d3ec9739",
+        "V4_04_mac_UpdateFirmware.pkg": "6a0fe2d1f1102d96420e38e866fb20ea453c3817c2c43717524ae202d3ec9739",
+        "mac_UpdateFirmware.pkg": "6a0fe2d1f1102d96420e38e866fb20ea453c3817c2c43717524ae202d3ec9739"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTTextLayer.h": {
+      "bytes": 859,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "ad517c56aea76c0ef95b9417dd56b0e5f37910babfb43bdd148fa7371cfab41f",
+        "V4_04_mac_UpdateFirmware.pkg": "ad517c56aea76c0ef95b9417dd56b0e5f37910babfb43bdd148fa7371cfab41f",
+        "mac_UpdateFirmware.pkg": "ad517c56aea76c0ef95b9417dd56b0e5f37910babfb43bdd148fa7371cfab41f"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTTextStyle.h": {
+      "bytes": 1444,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "5625668ecaa3c3597ced2329ab029563aceac1697d3c408db38ef696ac4d4735",
+        "V4_04_mac_UpdateFirmware.pkg": "5625668ecaa3c3597ced2329ab029563aceac1697d3c408db38ef696ac4d4735",
+        "mac_UpdateFirmware.pkg": "5625668ecaa3c3597ced2329ab029563aceac1697d3c408db38ef696ac4d4735"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTTextStylePlatformSpecific.h": {
+      "bytes": 549,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "524911662389c57b9b7be855307ddd74c251e4d86476340dd1ad1add05941487",
+        "V4_04_mac_UpdateFirmware.pkg": "524911662389c57b9b7be855307ddd74c251e4d86476340dd1ad1add05941487",
+        "mac_UpdateFirmware.pkg": "524911662389c57b9b7be855307ddd74c251e4d86476340dd1ad1add05941487"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTTheme.h": {
+      "bytes": 1501,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "971d52bd93829e084077bf6892380109e040f25f06dd3843be195a84ae26a369",
+        "V4_04_mac_UpdateFirmware.pkg": "971d52bd93829e084077bf6892380109e040f25f06dd3843be195a84ae26a369",
+        "mac_UpdateFirmware.pkg": "971d52bd93829e084077bf6892380109e040f25f06dd3843be195a84ae26a369"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTTimeFormatter.h": {
+      "bytes": 383,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "bda6b0d0879b323b29cb06ff8cbf0393b5df45fc54ed5e0ee82d42048e7a8c3f",
+        "V4_04_mac_UpdateFirmware.pkg": "bda6b0d0879b323b29cb06ff8cbf0393b5df45fc54ed5e0ee82d42048e7a8c3f",
+        "mac_UpdateFirmware.pkg": "bda6b0d0879b323b29cb06ff8cbf0393b5df45fc54ed5e0ee82d42048e7a8c3f"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTTradingRangePlot.h": {
+      "bytes": 9458,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "fdcf346fbba4858a54c5422cbd539bb881d0eea9b1df3aa95d82e779da501c97",
+        "V4_04_mac_UpdateFirmware.pkg": "fdcf346fbba4858a54c5422cbd539bb881d0eea9b1df3aa95d82e779da501c97",
+        "mac_UpdateFirmware.pkg": "fdcf346fbba4858a54c5422cbd539bb881d0eea9b1df3aa95d82e779da501c97"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTUtilities.h": {
+      "bytes": 4425,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "818e75168c47037795fdbd4aabf4f255fbaedfe5fe545679e1be0287383d5b0d",
+        "V4_04_mac_UpdateFirmware.pkg": "818e75168c47037795fdbd4aabf4f255fbaedfe5fe545679e1be0287383d5b0d",
+        "mac_UpdateFirmware.pkg": "818e75168c47037795fdbd4aabf4f255fbaedfe5fe545679e1be0287383d5b0d"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTXYAxis.h": {
+      "bytes": 362,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "ea8aeca44cdd4af04d3d9aa0337ea9739ad824072baf00ae62462d6a20c37d97",
+        "V4_04_mac_UpdateFirmware.pkg": "ea8aeca44cdd4af04d3d9aa0337ea9739ad824072baf00ae62462d6a20c37d97",
+        "mac_UpdateFirmware.pkg": "ea8aeca44cdd4af04d3d9aa0337ea9739ad824072baf00ae62462d6a20c37d97"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTXYAxisSet.h": {
+      "bytes": 207,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "f38797aea4c6e6f7fd5e4ce767dd170a576b818c5d82801cd14404ff0ae25869",
+        "V4_04_mac_UpdateFirmware.pkg": "f38797aea4c6e6f7fd5e4ce767dd170a576b818c5d82801cd14404ff0ae25869",
+        "mac_UpdateFirmware.pkg": "f38797aea4c6e6f7fd5e4ce767dd170a576b818c5d82801cd14404ff0ae25869"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTXYGraph.h": {
+      "bytes": 318,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "4c30d514f1e56be126fce4d22eda7a87106ee31efe601dda7483eb7c4bea1d34",
+        "V4_04_mac_UpdateFirmware.pkg": "4c30d514f1e56be126fce4d22eda7a87106ee31efe601dda7483eb7c4bea1d34",
+        "mac_UpdateFirmware.pkg": "4c30d514f1e56be126fce4d22eda7a87106ee31efe601dda7483eb7c4bea1d34"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Headers/CPTXYPlotSpace.h": {
+      "bytes": 1571,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "0d478b4626c29435fb5a546d2565fb8090e4e83f90992fe2d22b3f97dabf60da",
+        "V4_04_mac_UpdateFirmware.pkg": "0d478b4626c29435fb5a546d2565fb8090e4e83f90992fe2d22b3f97dabf60da",
+        "mac_UpdateFirmware.pkg": "0d478b4626c29435fb5a546d2565fb8090e4e83f90992fe2d22b3f97dabf60da"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTConstraintsFixed.h": {
+      "bytes": 491,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "97f50b3841c17193b334229aaed590269bed9812100f756c4eed753b5a32debc",
+        "V4_04_mac_UpdateFirmware.pkg": "97f50b3841c17193b334229aaed590269bed9812100f756c4eed753b5a32debc",
+        "mac_UpdateFirmware.pkg": "97f50b3841c17193b334229aaed590269bed9812100f756c4eed753b5a32debc"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTConstraintsRelative.h": {
+      "bytes": 427,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "a1ac4a24f0ec77934374e753b171c64b190b0edca1c7e7ad35c63f4ce60975a0",
+        "V4_04_mac_UpdateFirmware.pkg": "a1ac4a24f0ec77934374e753b171c64b190b0edca1c7e7ad35c63f4ce60975a0",
+        "mac_UpdateFirmware.pkg": "a1ac4a24f0ec77934374e753b171c64b190b0edca1c7e7ad35c63f4ce60975a0"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTDarkGradientTheme.h": {
+      "bytes": 82,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "05f9f22cdff61fe30e8f0cd5e910a06671f7afb8521684bb107eb3d21f42b69d",
+        "V4_04_mac_UpdateFirmware.pkg": "05f9f22cdff61fe30e8f0cd5e910a06671f7afb8521684bb107eb3d21f42b69d",
+        "mac_UpdateFirmware.pkg": "05f9f22cdff61fe30e8f0cd5e910a06671f7afb8521684bb107eb3d21f42b69d"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTFillColor.h": {
+      "bytes": 347,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "368bfb2a32a0c808f87fc72d7c8f26298810827ba3da1667c8212d04488e62ec",
+        "V4_04_mac_UpdateFirmware.pkg": "368bfb2a32a0c808f87fc72d7c8f26298810827ba3da1667c8212d04488e62ec",
+        "mac_UpdateFirmware.pkg": "368bfb2a32a0c808f87fc72d7c8f26298810827ba3da1667c8212d04488e62ec"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTFillGradient.h": {
+      "bytes": 386,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "e3126d6a61da879e00b4a535ed794eb50b65dc520d0c2de3c5697ffcef58614d",
+        "V4_04_mac_UpdateFirmware.pkg": "e3126d6a61da879e00b4a535ed794eb50b65dc520d0c2de3c5697ffcef58614d",
+        "mac_UpdateFirmware.pkg": "e3126d6a61da879e00b4a535ed794eb50b65dc520d0c2de3c5697ffcef58614d"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTFillImage.h": {
+      "bytes": 366,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "ea4b66651f60903c3c040ddad40f6bba1d12082f2e8f041961d4c95893969482",
+        "V4_04_mac_UpdateFirmware.pkg": "ea4b66651f60903c3c040ddad40f6bba1d12082f2e8f041961d4c95893969482",
+        "mac_UpdateFirmware.pkg": "ea4b66651f60903c3c040ddad40f6bba1d12082f2e8f041961d4c95893969482"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTPlainBlackTheme.h": {
+      "bytes": 80,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "badbd9e75fb95a5148e97354c153fe7114b90610ff85b9b26b3e7009026b77ea",
+        "V4_04_mac_UpdateFirmware.pkg": "badbd9e75fb95a5148e97354c153fe7114b90610ff85b9b26b3e7009026b77ea",
+        "mac_UpdateFirmware.pkg": "badbd9e75fb95a5148e97354c153fe7114b90610ff85b9b26b3e7009026b77ea"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTPlainWhiteTheme.h": {
+      "bytes": 80,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "907e1f29ee9343e66406a95db6353b8781a6db04069ceba0f9547d16be66b04b",
+        "V4_04_mac_UpdateFirmware.pkg": "907e1f29ee9343e66406a95db6353b8781a6db04069ceba0f9547d16be66b04b",
+        "mac_UpdateFirmware.pkg": "907e1f29ee9343e66406a95db6353b8781a6db04069ceba0f9547d16be66b04b"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTSlateTheme.h": {
+      "bytes": 75,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "3174c97a07df5d4137bb414b0d5d54bc13b2a1704358f71f75c3d36e5315f6fe",
+        "V4_04_mac_UpdateFirmware.pkg": "3174c97a07df5d4137bb414b0d5d54bc13b2a1704358f71f75c3d36e5315f6fe",
+        "mac_UpdateFirmware.pkg": "3174c97a07df5d4137bb414b0d5d54bc13b2a1704358f71f75c3d36e5315f6fe"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTStocksTheme.h": {
+      "bytes": 76,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "e45273ea1d43f87fddfb3952c207b8766485658d0cc2d2672a085eafa651631d",
+        "V4_04_mac_UpdateFirmware.pkg": "e45273ea1d43f87fddfb3952c207b8766485658d0cc2d2672a085eafa651631d",
+        "mac_UpdateFirmware.pkg": "e45273ea1d43f87fddfb3952c207b8766485658d0cc2d2672a085eafa651631d"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/_CPTXYTheme.h": {
+      "bytes": 66,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "5a84ad9ba00d07c2cd8f1b1f4fe3a7a356ccbc19324b1e3ac46e9af9b2a066ce",
+        "V4_04_mac_UpdateFirmware.pkg": "5a84ad9ba00d07c2cd8f1b1f4fe3a7a356ccbc19324b1e3ac46e9af9b2a066ce",
+        "mac_UpdateFirmware.pkg": "5a84ad9ba00d07c2cd8f1b1f4fe3a7a356ccbc19324b1e3ac46e9af9b2a066ce"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/CPTAxisLabelGroup.h": {
+      "bytes": 72,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "e12fd1d9fabf460564f84a6df4c3a28964304556d6a209c487f17c1607e58df2",
+        "V4_04_mac_UpdateFirmware.pkg": "e12fd1d9fabf460564f84a6df4c3a28964304556d6a209c487f17c1607e58df2",
+        "mac_UpdateFirmware.pkg": "e12fd1d9fabf460564f84a6df4c3a28964304556d6a209c487f17c1607e58df2"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/CPTGridLineGroup.h": {
+      "bytes": 291,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "49a2d6cecc56117ae6e1845b384f0fdd99c3f5fdb25608c50231706fa50d62a3",
+        "V4_04_mac_UpdateFirmware.pkg": "49a2d6cecc56117ae6e1845b384f0fdd99c3f5fdb25608c50231706fa50d62a3",
+        "mac_UpdateFirmware.pkg": "49a2d6cecc56117ae6e1845b384f0fdd99c3f5fdb25608c50231706fa50d62a3"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/CPTGridLines.h": {
+      "bytes": 267,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "ae99ab78194cf0f56cbbc5c405e674b6a4d60ee47a5ddb18a5b47ea15e25685b",
+        "V4_04_mac_UpdateFirmware.pkg": "ae99ab78194cf0f56cbbc5c405e674b6a4d60ee47a5ddb18a5b47ea15e25685b",
+        "mac_UpdateFirmware.pkg": "ae99ab78194cf0f56cbbc5c405e674b6a4d60ee47a5ddb18a5b47ea15e25685b"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/CPTPlotGroup.h": {
+      "bytes": 261,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "01e69881d893d8906e0036e523c5e39eddee5bd2bd8b2c6c138367abd54ff826",
+        "V4_04_mac_UpdateFirmware.pkg": "01e69881d893d8906e0036e523c5e39eddee5bd2bd8b2c6c138367abd54ff826",
+        "mac_UpdateFirmware.pkg": "01e69881d893d8906e0036e523c5e39eddee5bd2bd8b2c6c138367abd54ff826"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/NSCoderExtensions.h": {
+      "bytes": 1113,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "25b72aba37fd635d48a9048a373d5f37538b101428d68da8691d9d6795d8d9a5",
+        "V4_04_mac_UpdateFirmware.pkg": "25b72aba37fd635d48a9048a373d5f37538b101428d68da8691d9d6795d8d9a5",
+        "mac_UpdateFirmware.pkg": "25b72aba37fd635d48a9048a373d5f37538b101428d68da8691d9d6795d8d9a5"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/NSDecimalNumberExtensions.h": {
+      "bytes": 150,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "46dd358e310c6a7cb40c09cd51651b1b221e0a0c6a264040c19f3adada0c8191",
+        "V4_04_mac_UpdateFirmware.pkg": "46dd358e310c6a7cb40c09cd51651b1b221e0a0c6a264040c19f3adada0c8191",
+        "mac_UpdateFirmware.pkg": "46dd358e310c6a7cb40c09cd51651b1b221e0a0c6a264040c19f3adada0c8191"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/PrivateHeaders/NSNumberExtensions.h": {
+      "bytes": 277,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "bdb8034b99578687e22ef048d555da68a24e698c8daaa8e404eed1920dc0bf26",
+        "V4_04_mac_UpdateFirmware.pkg": "bdb8034b99578687e22ef048d555da68a24e698c8daaa8e404eed1920dc0bf26",
+        "mac_UpdateFirmware.pkg": "bdb8034b99578687e22ef048d555da68a24e698c8daaa8e404eed1920dc0bf26"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Resources/English.lproj/InfoPlist.strings": {
+      "bytes": 92,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "39cf2ee07b7b333e7c179d0bf4d798a5b72af6a4e584f51e642703bbfa4fc828",
+        "V4_04_mac_UpdateFirmware.pkg": "39cf2ee07b7b333e7c179d0bf4d798a5b72af6a4e584f51e642703bbfa4fc828",
+        "mac_UpdateFirmware.pkg": "39cf2ee07b7b333e7c179d0bf4d798a5b72af6a4e584f51e642703bbfa4fc828"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Resources/Info.plist": {
+      "bytes": 1167,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "c9a256b2fb3be5ac0e0ac1f30c577e97595f5bb72a8cf743c0f60b10f10e10c5",
+        "V4_04_mac_UpdateFirmware.pkg": "c9a256b2fb3be5ac0e0ac1f30c577e97595f5bb72a8cf743c0f60b10f10e10c5",
+        "mac_UpdateFirmware.pkg": "c9a256b2fb3be5ac0e0ac1f30c577e97595f5bb72a8cf743c0f60b10f10e10c5"
+      }
+    },
+    "Contents/Frameworks/CorePlot.framework/Versions/A/Resources/License.txt": {
+      "bytes": 1733,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "c5d808b3e684d33fa5a71ed8c4873b97e32d4117b6cb47fa4906ab59b8886299",
+        "V4_04_mac_UpdateFirmware.pkg": "c5d808b3e684d33fa5a71ed8c4873b97e32d4117b6cb47fa4906ab59b8886299",
+        "mac_UpdateFirmware.pkg": "c5d808b3e684d33fa5a71ed8c4873b97e32d4117b6cb47fa4906ab59b8886299"
+      }
+    },
+    "Contents/Info.plist": {
+      "bytes": 1575,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "c3fd0ba23e4c34eb0bc3497f35fff5e7b3c688ba8a0d4d2f78dd22f52e4fa50f",
+        "V4_04_mac_UpdateFirmware.pkg": "c3fd0ba23e4c34eb0bc3497f35fff5e7b3c688ba8a0d4d2f78dd22f52e4fa50f",
+        "mac_UpdateFirmware.pkg": "c3fd0ba23e4c34eb0bc3497f35fff5e7b3c688ba8a0d4d2f78dd22f52e4fa50f"
+      }
+    },
+    "Contents/MacOS/UpdateFirmware": {
+      "bytes": 107616,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "e0e0768491ab9c1d1ffab553533f0ea6d1c535b630741fbf7fde47d3b57c1616",
+        "V4_04_mac_UpdateFirmware.pkg": "1ddf9b827099564565f4c3d80ba9e640995a63cbf15d588b9fc18fc1356eed89",
+        "mac_UpdateFirmware.pkg": "e8b452ae3529a80473ba780fc2198002a93e4ad7ed0df31e6c03934d3e5dabb7"
+      }
+    },
+    "Contents/PkgInfo": {
+      "bytes": 8,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0",
+        "V4_04_mac_UpdateFirmware.pkg": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0",
+        "mac_UpdateFirmware.pkg": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0"
+      }
+    },
+    "Contents/Resources/AppIcon.icns": {
+      "bytes": 29487,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "6c941eed4936315e7cdd718933c790034a49538c3a26cfc67abd198ee8231fbc",
+        "V4_04_mac_UpdateFirmware.pkg": "6c941eed4936315e7cdd718933c790034a49538c3a26cfc67abd198ee8231fbc",
+        "mac_UpdateFirmware.pkg": "6c941eed4936315e7cdd718933c790034a49538c3a26cfc67abd198ee8231fbc"
+      }
+    },
+    "Contents/Resources/en.lproj/Background.png": {
+      "bytes": 1492,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "864bb29848a9e214d09b2e80ec71948544e55e88a09f6cc856875d6cf484a0e7",
+        "V4_04_mac_UpdateFirmware.pkg": "864bb29848a9e214d09b2e80ec71948544e55e88a09f6cc856875d6cf484a0e7",
+        "mac_UpdateFirmware.pkg": "864bb29848a9e214d09b2e80ec71948544e55e88a09f6cc856875d6cf484a0e7"
+      }
+    },
+    "Contents/Resources/en.lproj/ConfigureViewController.nib": {
+      "bytes": 7603,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "94d9415b5775e1e75810914b90015ab3115d02db6037f084ddc4440312f52cf1",
+        "V4_04_mac_UpdateFirmware.pkg": "94d9415b5775e1e75810914b90015ab3115d02db6037f084ddc4440312f52cf1",
+        "mac_UpdateFirmware.pkg": "94d9415b5775e1e75810914b90015ab3115d02db6037f084ddc4440312f52cf1"
+      }
+    },
+    "Contents/Resources/en.lproj/Credits.rtf": {
+      "bytes": 157,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "e36e69084d2710ceb5f854d2feee4193690c0aa1573826585f369e58413d0275",
+        "V4_04_mac_UpdateFirmware.pkg": "e36e69084d2710ceb5f854d2feee4193690c0aa1573826585f369e58413d0275",
+        "mac_UpdateFirmware.pkg": "e36e69084d2710ceb5f854d2feee4193690c0aa1573826585f369e58413d0275"
+      }
+    },
+    "Contents/Resources/en.lproj/InfoPlist.strings": {
+      "bytes": 92,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "39cf2ee07b7b333e7c179d0bf4d798a5b72af6a4e584f51e642703bbfa4fc828",
+        "V4_04_mac_UpdateFirmware.pkg": "39cf2ee07b7b333e7c179d0bf4d798a5b72af6a4e584f51e642703bbfa4fc828",
+        "mac_UpdateFirmware.pkg": "39cf2ee07b7b333e7c179d0bf4d798a5b72af6a4e584f51e642703bbfa4fc828"
+      }
+    },
+    "Contents/Resources/en.lproj/Localizable.strings": {
+      "bytes": 1716,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "6367bc3b4b4427bcb88e065a0673b89512bd76f621f62825c9fa004f75ab5766",
+        "V4_04_mac_UpdateFirmware.pkg": "6367bc3b4b4427bcb88e065a0673b89512bd76f621f62825c9fa004f75ab5766",
+        "mac_UpdateFirmware.pkg": "6367bc3b4b4427bcb88e065a0673b89512bd76f621f62825c9fa004f75ab5766"
+      }
+    },
+    "Contents/Resources/en.lproj/MainMenu.nib": {
+      "bytes": 4267,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "3396eb44e65892c739eee4a6fb5ca8252884224ac58ee6e81e74b48995cb9c92",
+        "V4_04_mac_UpdateFirmware.pkg": "3396eb44e65892c739eee4a6fb5ca8252884224ac58ee6e81e74b48995cb9c92",
+        "mac_UpdateFirmware.pkg": "3396eb44e65892c739eee4a6fb5ca8252884224ac58ee6e81e74b48995cb9c92"
+      }
+    },
+    "Contents/Resources/en.lproj/modifyBtn.PNG": {
+      "bytes": 453,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "bec39c700114a911c1ac55311f8c718a9229b8f2ca9da981d6f66a4dd988ab0c",
+        "V4_04_mac_UpdateFirmware.pkg": "bec39c700114a911c1ac55311f8c718a9229b8f2ca9da981d6f66a4dd988ab0c",
+        "mac_UpdateFirmware.pkg": "bec39c700114a911c1ac55311f8c718a9229b8f2ca9da981d6f66a4dd988ab0c"
+      }
+    },
+    "Contents/Resources/en.lproj/modifyBtnPressed.PNG": {
+      "bytes": 937,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "4400b74822daef0152984c43afe6de2b33ae6608fd0e770c358196d7d14c5209",
+        "V4_04_mac_UpdateFirmware.pkg": "4400b74822daef0152984c43afe6de2b33ae6608fd0e770c358196d7d14c5209",
+        "mac_UpdateFirmware.pkg": "4400b74822daef0152984c43afe6de2b33ae6608fd0e770c358196d7d14c5209"
+      }
+    },
+    "Contents/Resources/en.lproj/MVR-Info.plist": {
+      "bytes": 1168,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "ae436a566c3c6b2113fc89918ad95f4163060b2102404705eabd92e48446dc96",
+        "V4_04_mac_UpdateFirmware.pkg": "ae436a566c3c6b2113fc89918ad95f4163060b2102404705eabd92e48446dc96",
+        "mac_UpdateFirmware.pkg": "ae436a566c3c6b2113fc89918ad95f4163060b2102404705eabd92e48446dc96"
+      }
+    },
+    "Contents/Resources/Hex/eVic_VTwo_mini_V4.02.bin": {
+      "bytes": 68744,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "f577d58c2917ecc70c18614bf3c1a9787ea6d126a215caf4e04d3e90289e52a7"
+      }
+    },
+    "Contents/Resources/Hex/Logo.bmp": {
+      "bytes": 382,
+      "sha256_by_package": {
+        "V4_02_mac_UpdateFirmware.pkg": "4c86e48f209f192b7eb306f837214622a8a722d38231732db4e43b43dbce1fb4",
+        "V4_04_mac_UpdateFirmware.pkg": "4c86e48f209f192b7eb306f837214622a8a722d38231732db4e43b43dbce1fb4",
+        "mac_UpdateFirmware.pkg": "4c86e48f209f192b7eb306f837214622a8a722d38231732db4e43b43dbce1fb4"
+      }
+    },
+    "Contents/Resources/Hex/eVic_VTwo_mini_V4.04.bin": {
+      "bytes": 70072,
+      "sha256_by_package": {
+        "V4_04_mac_UpdateFirmware.pkg": "48f9fffe31a7663178a7dcaa80b9f8fada71842f3931144e8e1d8fb722bc1e7d"
+      }
+    },
+    "Contents/Resources/Hex/eVic_VTwo_mini_V5.04.bin": {
+      "bytes": 70904,
+      "sha256_by_package": {
+        "mac_UpdateFirmware.pkg": "c2dfa3034828b06081567eb384d90d8b5e2c9e8be8917a116cc8c2e1954f7274"
+      }
+    }
+  },
+  "firmware_analysis": [
+    {
+      "file": "unpacked/V4_02_win_UpdateFirmware/eVic_VTwo_mini_V4.02.bin",
+      "bytes": 68744,
+      "encrypted_sha256": "f577d58c2917ecc70c18614bf3c1a9787ea6d126a215caf4e04d3e90289e52a7",
+      "decrypted_sha256": "6310d6583610c3250a9193c191fb2b75c2173c99a2c06c2afb83d11c9d5e4462",
+      "initial_sp": "0x200022e8",
+      "reset_vector": "0x171",
+      "end_exclusive": "0x10c88",
+      "page_rounded_end_exclusive": "0x11000",
+      "patterns": {
+        "E115": [
+          "0x2884"
+        ],
+        "E043": [],
+        "Joyetech APROM": [
+          "0xc42"
+        ],
+        "Joyetech LDROM": [],
+        "LDROM": [
+          "0x3443",
+          "0x38af"
+        ],
+        "HIDC": [
+          "0x6de0"
+        ]
+      },
+      "aligned_literal_matches": {
+        "0x19800": [],
+        "0x1d800": [],
+        "0x1e000": [],
+        "0x1f000": [],
+        "0x20000": [],
+        "0x100000": [
+          "0x10798"
+        ],
+        "0x300000": [
+          "0xb764",
+          "0xb770",
+          "0xb7f4",
+          "0xb800",
+          "0xb844",
+          "0xcdb8"
+        ],
+        "0x4000c000": [
+          "0x1f44",
+          "0x1f80",
+          "0x1fc0",
+          "0x2394",
+          "0x2970",
+          "0x2980",
+          "0x2990",
+          "0x29a0",
+          "0x29d0",
+          "0x29e0",
+          "0x29fc",
+          "0x2a18",
+          "0x2a5c",
+          "0x2ab4",
+          "0x7778"
+        ],
+        "0x4000c004": [],
+        "0x4000c008": [],
+        "0x4000c00c": [],
+        "0x4000c010": [],
+        "0x4000c014": []
+      },
+      "declared_max_product_hw_version": "1.01",
+      "max_product_hw_version_bytes": [
+        1,
+        0,
+        1
+      ],
+      "padded_windows_hid_data_end_exclusive": "0x10cc0"
+    },
+    {
+      "file": "unpacked/V4_04_win_UpdateFirmware/eVic_VTwo_mini_V4.04.bin",
+      "bytes": 70072,
+      "encrypted_sha256": "48f9fffe31a7663178a7dcaa80b9f8fada71842f3931144e8e1d8fb722bc1e7d",
+      "decrypted_sha256": "f52d9c4d35b64a2b3b0bb5c28a352e28968e6b6ec941a5e95dbf636d4ac2b732",
+      "initial_sp": "0x200022e8",
+      "reset_vector": "0x171",
+      "end_exclusive": "0x111b8",
+      "page_rounded_end_exclusive": "0x11800",
+      "patterns": {
+        "E115": [
+          "0x28f4"
+        ],
+        "E043": [],
+        "Joyetech APROM": [
+          "0xc42"
+        ],
+        "Joyetech LDROM": [],
+        "LDROM": [
+          "0x34b3",
+          "0x391f"
+        ],
+        "HIDC": [
+          "0x70f8"
+        ]
+      },
+      "aligned_literal_matches": {
+        "0x19800": [],
+        "0x1d800": [],
+        "0x1e000": [],
+        "0x1f000": [],
+        "0x20000": [],
+        "0x100000": [
+          "0x10cb0"
+        ],
+        "0x300000": [
+          "0xbc74",
+          "0xbc80",
+          "0xbd04",
+          "0xbd10",
+          "0xbd54",
+          "0xd2c8"
+        ],
+        "0x4000c000": [
+          "0x1f78",
+          "0x1fb4",
+          "0x1ff4",
+          "0x23c8",
+          "0x29e0",
+          "0x29f0",
+          "0x2a00",
+          "0x2a10",
+          "0x2a40",
+          "0x2a50",
+          "0x2a6c",
+          "0x2a88",
+          "0x2acc",
+          "0x2b24",
+          "0x7a90"
+        ],
+        "0x4000c004": [],
+        "0x4000c008": [],
+        "0x4000c00c": [],
+        "0x4000c010": [],
+        "0x4000c014": []
+      },
+      "declared_max_product_hw_version": "1.01",
+      "max_product_hw_version_bytes": [
+        1,
+        0,
+        1
+      ],
+      "padded_windows_hid_data_end_exclusive": "0x111c0"
+    },
+    {
+      "file": "unpacked/win_UpdateFirmware/eVic_VTwo_mini_V5.04.bin",
+      "bytes": 70904,
+      "encrypted_sha256": "c2dfa3034828b06081567eb384d90d8b5e2c9e8be8917a116cc8c2e1954f7274",
+      "decrypted_sha256": "6870dad5875e6d6de87e10d66d5c680a9fc75b08509aa4e4d34d05380cab26c1",
+      "initial_sp": "0x200022e8",
+      "reset_vector": "0x171",
+      "end_exclusive": "0x114f8",
+      "page_rounded_end_exclusive": "0x11800",
+      "patterns": {
+        "E115": [
+          "0x28f0"
+        ],
+        "E043": [],
+        "Joyetech APROM": [
+          "0xc42"
+        ],
+        "Joyetech LDROM": [],
+        "LDROM": [
+          "0x367f",
+          "0x3aeb"
+        ],
+        "HIDC": [
+          "0x73a8"
+        ]
+      },
+      "aligned_literal_matches": {
+        "0x19800": [],
+        "0x1d800": [],
+        "0x1e000": [],
+        "0x1f000": [],
+        "0x20000": [],
+        "0x100000": [
+          "0xdd4c",
+          "0x11034"
+        ],
+        "0x300000": [
+          "0xbfc4",
+          "0xbfd0",
+          "0xc054",
+          "0xc060",
+          "0xc0a4",
+          "0xd680",
+          "0xdd44"
+        ],
+        "0x4000c000": [
+          "0x1f78",
+          "0x1fb4",
+          "0x1ff4",
+          "0x23cc",
+          "0x29dc",
+          "0x29ec",
+          "0x29fc",
+          "0x2a0c",
+          "0x2a3c",
+          "0x2a4c",
+          "0x2a68",
+          "0x2a84",
+          "0x2ac8",
+          "0x2b20",
+          "0x7d40"
+        ],
+        "0x4000c004": [],
+        "0x4000c008": [],
+        "0x4000c00c": [],
+        "0x4000c010": [],
+        "0x4000c014": []
+      },
+      "declared_max_product_hw_version": "1.01",
+      "max_product_hw_version_bytes": [
+        1,
+        0,
+        1
+      ],
+      "padded_windows_hid_data_end_exclusive": "0x11500"
+    }
+  ],
+  "windows_pe": {
+    "nt_header_file_offset": "0x110",
+    "image_base": "0x400000",
+    "security_directory_entry_file_offset": "0x1a8",
+    "security_directory_file_offset": 0,
+    "security_directory_bytes": 0,
+    "sections": [
+      {
+        "name": ".textbss",
+        "virtual_size": 3114065,
+        "rva": 4096,
+        "raw_size": 0,
+        "file_offset": 0
+      },
+      {
+        "name": ".text",
+        "virtual_size": 6460505,
+        "rva": 3121152,
+        "raw_size": 6460928,
+        "file_offset": 1024
+      },
+      {
+        "name": ".rdata",
+        "virtual_size": 850456,
+        "rva": 9584640,
+        "raw_size": 850944,
+        "file_offset": 6461952
+      },
+      {
+        "name": ".data",
+        "virtual_size": 97624,
+        "rva": 10436608,
+        "raw_size": 45056,
+        "file_offset": 7312896
+      },
+      {
+        "name": ".idata",
+        "virtual_size": 27986,
+        "rva": 10534912,
+        "raw_size": 28160,
+        "file_offset": 7357952
+      },
+      {
+        "name": ".rsrc",
+        "virtual_size": 2255532,
+        "rva": 10563584,
+        "raw_size": 2255872,
+        "file_offset": 7386112
+      },
+      {
+        "name": ".reloc",
+        "virtual_size": 330073,
+        "rva": 12820480,
+        "raw_size": 330240,
+        "file_offset": 9641984
+      }
+    ],
+    "import_dlls": [
+      "HID.DLL",
+      "SETUPAPI.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "GDI32.dll",
+      "MSIMG32.dll",
+      "WINSPOOL.DRV",
+      "ADVAPI32.dll",
+      "SHELL32.dll",
+      "COMCTL32.dll",
+      "SHLWAPI.dll",
+      "UxTheme.dll",
+      "ole32.dll",
+      "OLEAUT32.dll",
+      "oledlg.dll",
+      "gdiplus.dll",
+      "OLEACC.dll",
+      "IMM32.dll",
+      "WINMM.dll"
+    ],
+    "resource_type_counts": {
+      "PNG": 553,
+      "STYLE_XML": 5,
+      "1": 28,
+      "2": 50,
+      "3": 13,
+      "4": 1,
+      "5": 23,
+      "6": 29,
+      "12": 27,
+      "14": 5,
+      "16": 1,
+      "24": 1,
+      "241": 2
+    }
+  },
+  "mac_signature": {
+    "load_command_file_offset": "0xfc8",
+    "signature_file_offset": "0x17a10",
+    "signature_allocation_bytes": "0x2a50",
+    "signature_superblob_bytes": 6524,
+    "primary_code_directory_file_offset": "0x17a3c",
+    "alternate_code_directory_file_offset": "0x17d5f",
+    "cms_blob_wrapper_file_offset": "0x18116",
+    "cms_blob_wrapper_bytes": 4726,
+    "code_pages_per_directory": 24,
+    "matched_code_pages_per_directory": 24,
+    "matched_CodeResources_files": 12,
+    "special_slots": [
+      {
+        "CodeDirectory_slot": 0,
+        "algorithm": "sha1",
+        "special_slot": 1,
+        "hash_file_offset": "0x17abb",
+        "bytes": 1575,
+        "stored": "414cc02e9054a5a32c0acee95181adf81927d334",
+        "computed": "414cc02e9054a5a32c0acee95181adf81927d334",
+        "match": true
+      },
+      {
+        "CodeDirectory_slot": 0,
+        "algorithm": "sha1",
+        "special_slot": 2,
+        "hash_file_offset": "0x17aa7",
+        "bytes": 176,
+        "stored": "d1c840c7ac3ffc8423fa0117bd3cf616fd989638",
+        "computed": "d1c840c7ac3ffc8423fa0117bd3cf616fd989638",
+        "match": true
+      },
+      {
+        "CodeDirectory_slot": 0,
+        "algorithm": "sha1",
+        "special_slot": 3,
+        "hash_file_offset": "0x17a93",
+        "bytes": 7310,
+        "stored": "94ad02e4c543fea628ff8a7fa8ae5f03c1340abb",
+        "computed": "94ad02e4c543fea628ff8a7fa8ae5f03c1340abb",
+        "match": true
+      },
+      {
+        "CodeDirectory_slot": 4096,
+        "algorithm": "sha256",
+        "special_slot": 1,
+        "hash_file_offset": "0x17df6",
+        "bytes": 1575,
+        "stored": "c3fd0ba23e4c34eb0bc3497f35fff5e7b3c688ba8a0d4d2f78dd22f52e4fa50f",
+        "computed": "c3fd0ba23e4c34eb0bc3497f35fff5e7b3c688ba8a0d4d2f78dd22f52e4fa50f",
+        "match": true
+      },
+      {
+        "CodeDirectory_slot": 4096,
+        "algorithm": "sha256",
+        "special_slot": 2,
+        "hash_file_offset": "0x17dd6",
+        "bytes": 176,
+        "stored": "42c806fb06d3657dd603f4acf336facf42df871c60fe90b4252ccbaed418529a",
+        "computed": "42c806fb06d3657dd603f4acf336facf42df871c60fe90b4252ccbaed418529a",
+        "match": true
+      },
+      {
+        "CodeDirectory_slot": 4096,
+        "algorithm": "sha256",
+        "special_slot": 3,
+        "hash_file_offset": "0x17db6",
+        "bytes": 7310,
+        "stored": "1c402560cd5a2c99956a3cd6b861fa8a2a3f0a2128d4c7823610707c8ca4d1da",
+        "computed": "1c402560cd5a2c99956a3cd6b861fa8a2a3f0a2128d4c7823610707c8ca4d1da",
+        "match": true
+      }
+    ],
+    "cms_signature_crypto_check": "PASS（OpenSSL cms -verify -binary -noverify、最新版の主CodeDirectory）",
+    "certificate_chain_trust_revocation_timestamp": "NOT_VERIFIED",
+    "certificates_embedded": [
+      {
+        "subject": "CN=Apple Worldwide Developer Relations Certification Authority,OU=Apple Worldwide Developer Relations,O=Apple Inc.,C=US",
+        "issuer": "CN=Apple Root CA,OU=Apple Certification Authority,O=Apple Inc.,C=US",
+        "serial": "0x1debcc4396da010",
+        "not_before_utc": "2013-02-07 21:48:47+00:00",
+        "not_after_utc": "2023-02-07 21:48:47+00:00"
+      },
+      {
+        "subject": "CN=Apple Root CA,OU=Apple Certification Authority,O=Apple Inc.,C=US",
+        "issuer": "CN=Apple Root CA,OU=Apple Certification Authority,O=Apple Inc.,C=US",
+        "serial": "0x2",
+        "not_before_utc": "2006-04-25 21:40:36+00:00",
+        "not_after_utc": "2035-02-09 21:40:36+00:00"
+      },
+      {
+        "subject": "C=US,O=Joyetech(Changzhou) Electronics Technology Co.\\, Ltd.,OU=DXNWQSAN68,CN=Mac Developer: 锋 张 (VZ8PKW3649),UID=9G2L66GKEM",
+        "issuer": "CN=Apple Worldwide Developer Relations Certification Authority,OU=Apple Worldwide Developer Relations,O=Apple Inc.,C=US",
+        "serial": "0x120ad867db8fdc87",
+        "not_before_utc": "2016-07-05 08:34:47+00:00",
+        "not_after_utc": "2017-07-05 08:34:47+00:00"
+      }
+    ],
+    "not_verified": [
+      "files2の全規則",
+      "CorePlotのネスト署名全体",
+      "PKGの包括的署名検証",
+      "alternate CodeDirectoryのCMS属性との結合"
+    ]
+  },
+  "tools": {
+    "python": "3.12 stdlib（対象コードをimportせず）",
+    "objdump": "GNU Binutils 2.44",
+    "openssl": "OpenSSL 3.5.7",
+    "capstone": {
+      "version": "5.0.6",
+      "source_url": "https://files.pythonhosted.org/packages/78/7f/ec0687bbe8f6b128f1d41d90ec7cedfd1aaaa4ecb1ae8d334acc7dad8013/capstone-5.0.6-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 1481605,
+      "sha256": "0358855773100bb91ae6681fabce7299df83156945ba943f6211061a592c54a6",
+      "review": "PyPI metadataとhash照合、wheel内.pth/setup.pyなし。workspaceへ展開し逆アセンブル解析だけに使用。"
+    }
+  },
+  "remaining_evidence": [
+    "ユーザーGETINFO原本の今回再検証（未受領）、実チップ刻印・PCB・silicon revision・CONFIG",
+    "当該E115のLDROM 0x100000–0x100FFFの実体とhash",
+    "LDROMの消去ループ/上限/丸め/中断時挙動",
+    "候補8ページの更新/復旧保持実証"
+  ],
+  "third_party_binaries_used": false,
+  "hardware_actions": "NOT_RUN",
+  "offline_verification": {
+    "公式ZIP・全60メンバーCRC/hash": 6,
+    "Mac展開通常ファイルhash": 321,
+    "BIN変換往復・E115・候補手前終端": 3,
+    "Windows命令VA/file照合・証明書テーブル": 10,
+    "APROM dispatcher/erase補助命令": 2,
+    "Mac CMS暗号整合（信頼検証なし）": "PASS",
+    "提出資料4件・diff check・候補8ページ": "PASS"
+  },
+  "independent_review": {
+    "result": "重要指摘CorePlotの版間同一性を修正、残る重大・重要指摘なし",
+    "scope": "原本の静的照合のみ。実機・対象実行なし。"
+  },
+  "integration_parent": "d1a219b595f5410b860845c0c99e41dc390b3612",
+  "subsequent_user_log_evidence": {
+    "commit": "d1a219b595f5410b860845c0c99e41dc390b3612",
+    "source_path": "docs/reports/b1/B1_E115_REAL_DEVICE_EVIDENCE_20261025.md",
+    "evidence": "USER_LOG_PASS / SOURCE_CORROBORATED（今回原本GETINFOは未受領・再測定していない）",
+    "reported_product": "E115",
+    "reported_product_hw": 100,
+    "reported_fw": 504,
+    "reported_fmc": {
+      "CID": "0x000000DA",
+      "DID": "0x00002980",
+      "PID": "0x00845201"
+    },
+    "reported_LDROM_mode_GETINFO": {
+      "FW": 0,
+      "LDROM": 100,
+      "bootflag": 0
+    },
+    "reported_archive_sha256": "20ed1e118745c25df8b3c4dda036a2cc0f1c45a0a3bae6955a41178517fb9ed9",
+    "physical_LDROM_dump": "NOT_OBTAINED",
+    "physical_CONFIG_and_candidate": "NOT_OBTAINED"
+  }
+}
