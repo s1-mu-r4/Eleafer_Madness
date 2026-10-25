@@ -82,7 +82,13 @@ for su in (root/"build1").rglob("*.su"):
     for line in su.read_text(errors="replace").splitlines():
         m = re.search(r":([^:\t]+)\t(\d+)\t", line)
         if m:
-            functions[m.group(1)] = max(int(m.group(2)), functions.get(m.group(1), 0))
+            name = m.group(1)
+            value = int(m.group(2))
+            functions[name] = max(value, functions.get(name, 0))
+            # GCC may append a .constprop / .isra specialization to a noinline function.
+            if name.startswith("hidWriteStoredProfile."):
+                functions["hidWriteStoredProfile"] = max(value, functions.get("hidWriteStoredProfile", 0))
+print("Matching compiler .su names:", [k for k in functions if "Profile" in k or "hidGetOutReport" in k])
 for fn in ("hidGetOutReport","SaveProfile","hidWriteStoredProfile"):
     assert fn in functions, "missing stack report: "+fn
 a = functions["hidGetOutReport"] + functions["SaveProfile"]
